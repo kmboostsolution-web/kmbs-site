@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO & Meta Tags -->
+  <title>[NOME DA PADARIA] | Padaria Artesanal & Café em [CIDADE]</title>
+  <meta name="description" content="Descubra a autêntica padaria artesanal em [CIDADE]. Pães de fermentação natural, croissants folhados na manteiga, bolos frescos e cafés especiais. Faça seu pedido pelo WhatsApp!" />
+  <meta name="keywords" content="padaria em [CIDADE], padaria artesanal em [CIDADE], pães artesanais em [CIDADE], bolos e doces em [CIDADE], café da manhã, confeitaria" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.padariaexemplo.com.br" />
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="[NOME DA PADARIA] | O sabor que começa no forno" />
+  <meta property="og:description" content="Pães artesanais, doces frescos e cafés especiais feitos todos os dias para você em [CIDADE]." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1600&auto=format&fit=crop" />
+
+  <!-- Google Fonts: Cormorant Garamond (editorial/elegante) & Plus Jakarta Sans (ultra legível) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Schema.org Markup para Padaria / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "[NOME DA PADARIA]",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1600&auto=format&fit=crop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua das Flores, 123 - Centro",
+      "addressLocality": "[CIDADE]",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "telephone": "+55[NÚMERO DO WHATSAPP]",
+    "priceRange": "$$",
+    "servesCuisine": ["Padaria Artesanal", "Confeitaria", "Cafés Especiais"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday"],
+        "opens": "07:30",
+        "closes": "14:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ==========================================================================
+       VARIÁVEIS DE DESIGN & TEMA VISUAL (WARM ARTISANAL LUXURY)
+       ========================================================================== */
+    :root {
+      --bg-cream: #FBF8F3;
+      --bg-cream-alt: #F4EFE6;
+      --bg-card: #FFFFFF;
+      --text-main: #231812;
+      --text-muted: #655448;
+      --accent-caramel: #B57A42;
+      --accent-hover: #965F2F;
+      --accent-gold: #C9A05C;
+      --border-subtle: #E8DEC8;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --shadow-sm: 0 4px 20px rgba(35, 24, 18, 0.05);
+      --shadow-md: 0 10px 30px rgba(35, 24, 18, 0.08);
+      --shadow-lg: 0 20px 45px rgba(35, 24, 18, 0.12);
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      line-height: 1.15;
+      color: var(--text-main);
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-spacing {
+      padding: 110px 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-spacing {
+        padding: 70px 0;
+      }
+    }
+
+    /* ==========================================================================
+       ESTILOS DE BOTÕES PREMIUM
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 34px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid transparent;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-caramel);
+      color: #FFFFFF;
+      box-shadow: 0 8px 24px rgba(181, 122, 66, 0.28);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(150, 95, 47, 0.35);
+      color: #ffffff;
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.8);
+      color: #FFFFFF;
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-outline:hover {
+      background-color: #FFFFFF;
+      color: var(--text-main);
+      border-color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    .btn-dark {
+      background-color: var(--text-main);
+      color: #FFFFFF;
+    }
+
+    .btn-dark:hover {
+      background-color: var(--accent-caramel);
+      transform: translateY(-2px);
+    }
+
+    /* Subtítulo elegante */
+    .section-tag {
+      display: inline-block;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--accent-caramel);
+      font-weight: 700;
+      margin-bottom: 14px;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+      margin-bottom: 20px;
+    }
+
+    /* ==========================================================================
+       HEADER & BARRA DE NAVEGAÇÃO
+       ========================================================================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      transition: var(--transition);
+      padding: 24px 0;
+    }
+
+    .header.scrolled {
+      background-color: rgba(251, 248, 243, 0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      padding: 14px 0;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      color: #FFFFFF;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header.scrolled .logo {
+      color: var(--text-main);
+    }
+
+    .logo span {
+      color: var(--accent-gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.94rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      position: relative;
+      padding: 4px 0;
+    }
+
+    .header.scrolled .nav-link {
+      color: var(--text-main);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 1.5px;
+      background-color: var(--accent-gold);
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .header-cta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: #FFFFFF;
+      margin: 6px 0;
+      transition: var(--transition);
+    }
+
+    .header.scrolled .mobile-menu-btn span {
+      background-color: var(--text-main);
+    }
+
+    /* ==========================================================================
+       HERO SECTION (PRIMEIRA TELA IMPACTANTE)
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #FFFFFF;
+      padding: 130px 24px 80px;
+      background-color: #1a120c;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.55);
+      transform: scale(1.03);
+      animation: heroZoom 18s ease-out infinite alternate;
+    }
+
+    @keyframes heroZoom {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.08); }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-size: 0.85rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent-gold);
+      margin-bottom: 20px;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(201, 160, 92, 0.4);
+      padding-bottom: 6px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 6.5vw, 4.8rem);
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+      color: rgba(255, 255, 255, 0.92);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* Indicador sutil de scroll */
+    .hero-scroll-indicator {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    .scroll-line {
+      width: 1px;
+      height: 35px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.8), transparent);
+      animation: scrollGlow 2s infinite ease-in-out;
+    }
+
+    @keyframes scrollGlow {
+      0%, 100% { opacity: 0.3; transform: scaleY(0.7); }
+      50% { opacity: 1; transform: scaleY(1); }
+    }
+
+    /* ==========================================================================
+       PRODUTOS EM DESTAQUE (FEITO TODOS OS DIAS PARA VOCÊ)
+       ========================================================================== */
+    .featured {
+      background-color: var(--bg-cream);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 60px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 36px;
+    }
+
+    .product-card {
+      background-color: var(--bg-card);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(181, 122, 66, 0.4);
+    }
+
+    .product-img-wrapper {
+      position: relative;
+      height: 290px;
+      overflow: hidden;
+      background-color: #eee;
+    }
+
+    .product-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .product-card:hover .product-img-wrapper img {
+      transform: scale(1.06);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(6px);
+      color: var(--text-main);
+      padding: 6px 14px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .product-info {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 1.55rem;
+      margin-bottom: 8px;
+    }
+
+    .product-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #f0e9dc;
+      padding-top: 18px;
+    }
+
+    .product-price {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--accent-caramel);
+    }
+
+    .product-btn-order {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .product-btn-order:hover {
+      color: var(--accent-caramel);
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       SEÇÃO DE DESTAQUE (CAFÉ DA MANHÃ)
+       ========================================================================== */
+    .spotlight {
+      background-color: var(--bg-cream-alt);
+      border-top: 1px solid var(--border-subtle);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .spotlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .spotlight-image-container {
+      position: relative;
+    }
+
+    .spotlight-image {
+      border-radius: 6px;
+      box-shadow: var(--shadow-lg);
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+    }
+
+    .spotlight-floating-badge {
+      position: absolute;
+      bottom: -25px;
+      right: -20px;
+      background-color: var(--text-main);
+      color: #FFFFFF;
+      padding: 24px 30px;
+      border-radius: 4px;
+      box-shadow: var(--shadow-md);
+      max-width: 220px;
+    }
+
+    .spotlight-floating-badge h4 {
+      color: var(--accent-gold);
+      font-size: 1.4rem;
+      margin-bottom: 4px;
+    }
+
+    .spotlight-floating-badge p {
+      color: #d1c5bb;
+      font-size: 0.85rem;
+    }
+
+    .spotlight-content h2 {
+      margin-bottom: 24px;
+    }
+
+    .spotlight-content p {
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+    }
+
+    .spotlight-features {
+      list-style: none;
+      margin-bottom: 36px;
+    }
+
+    .spotlight-features li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: var(--text-main);
+    }
+
+    .spotlight-features li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--accent-caramel);
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       CARDÁPIO COMPLETO
+       ========================================================================== */
+    .menu-section {
+      background-color: var(--bg-cream);
+    }
+
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 50px;
+      flex-wrap: wrap;
+    }
+
+    .menu-tab-btn {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      padding: 12px 28px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 30px;
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.04em;
+    }
+
+    .menu-tab-btn.active,
+    .menu-tab-btn:hover {
+      background-color: var(--accent-caramel);
+      color: #FFFFFF;
+      border-color: var(--accent-caramel);
+      box-shadow: 0 4px 14px rgba(181, 122, 66, 0.25);
+    }
+
+    .menu-category-content {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .menu-category-content.active {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+      gap: 28px 45px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding-bottom: 18px;
+      border-bottom: 1px dashed #ded4c5;
+    }
+
+    .menu-item-info {
+      padding-right: 20px;
+    }
+
+    .menu-item-name {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .menu-item-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .menu-item-price {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent-caramel);
+      white-space: nowrap;
+    }
+
+    .menu-footer-cta {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    /* ==========================================================================
+       SOBRE A PADARIA
+       ========================================================================== */
+    .about {
+      background-color: var(--bg-cream-alt);
+      position: relative;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-text h2 {
+      margin-bottom: 24px;
+    }
+
+    .about-text p {
+      font-size: 1.04rem;
+      margin-bottom: 20px;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 36px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .stat-number {
+      font-family: var(--font-serif);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent-caramel);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+    }
+
+    .about-img-group {
+      position: relative;
+    }
+
+    .about-main-img {
+      border-radius: 6px;
+      width: 100%;
+      height: 560px;
+      object-fit: cover;
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* ==========================================================================
+       GALERIA VISUAL EDITORIAL
+       ========================================================================== */
+    .gallery {
+      background-color: var(--bg-cream);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: 270px;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(35, 24, 18, 0.6) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+
+    .gallery-item.col-6 { grid-column: span 6; }
+    .gallery-item.col-4 { grid-column: span 4; }
+    .gallery-item.col-3 { grid-column: span 3; }
+    .gallery-item.row-2 { grid-row: span 2; }
+
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 240px;
+      }
+      .gallery-item.col-6,
+      .gallery-item.col-4,
+      .gallery-item.col-3,
+      .gallery-item.row-2 {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ==========================================================================
+       AVALIAÇÕES DE CLIENTES
+       ========================================================================== */
+    .reviews {
+      background-color: var(--bg-cream-alt);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .review-card {
+      background-color: var(--bg-card);
+      padding: 40px 32px;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-stars {
+      color: var(--accent-gold);
+      font-size: 1.1rem;
+      margin-bottom: 18px;
+      letter-spacing: 2px;
+    }
+
+    .review-quote {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--text-main);
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .review-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .review-author-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .review-author-status {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       LOCALIZAÇÃO & CONTATO
+       ========================================================================== */
+    .contact-section {
+      background-color: var(--bg-cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .contact-info-block {
+      margin-bottom: 28px;
+    }
+
+    .contact-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent-caramel);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .contact-value {
+      font-size: 1.15rem;
+      color: var(--text-main);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .map-box {
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-subtle);
+      height: 420px;
+      position: relative;
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      filter: contrast(95%) saturate(85%);
+    }
+
+    /* ==========================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP
+       ========================================================================== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 990;
+      background-color: #25D366;
+      color: #FFFFFF;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .whatsapp-floating:hover {
+      transform: scale(1.08) rotate(6deg);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.55);
+    }
+
+    .whatsapp-floating svg {
+      width: 32px;
+      height: 32px;
+      fill: currentColor;
+    }
+
+    .whatsapp-pulse {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #25D366;
+      opacity: 0.4;
+      animation: pulseEffect 2.2s infinite ease-out;
+      z-index: -1;
+    }
+
+    @keyframes pulseEffect {
+      0% { transform: scale(1); opacity: 0.5; }
+      100% { transform: scale(1.6); opacity: 0; }
+    }
+
+    /* ==========================================================================
+       FOOTER ELEGANTE
+       ========================================================================== */
+    .footer {
+      background-color: #1a120c;
+      color: #FFFFFF;
+      padding: 90px 0 35px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+      gap: 50px;
+      margin-bottom: 70px;
+    }
+
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 18px;
+      display: inline-block;
+    }
+
+    .footer-desc {
+      color: #b3a59a;
+      font-size: 0.94rem;
+      line-height: 1.7;
+      max-width: 330px;
+    }
+
+    .footer-heading {
+      font-family: var(--font-sans);
+      font-size: 0.92rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+      font-weight: 700;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #cfc4ba;
+      font-size: 0.94rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-gold);
+      padding-left: 5px;
+    }
+
+    .footer-contact-item {
+      color: #cfc4ba;
+      font-size: 0.94rem;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: #8c7e73;
+    }
+
+    .footer-bottom a {
+      color: #b8aba1;
+    }
+
+    .footer-bottom a:hover {
+      color: #FFFFFF;
+    }
+
+    /* ==========================================================================
+       RESPONSIVIDADE (TABLETS E CELULARES)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .spotlight-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .spotlight-image-container,
+      .about-img-group {
+        order: -1;
+      }
+
+      .spotlight-image,
+      .about-main-img {
+        height: 420px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background-color: var(--bg-card);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 50px 35px;
+        gap: 26px;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+        transition: right 0.4s ease;
+        z-index: 1000;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-link {
+        color: var(--text-main) !important;
+        font-size: 1.25rem;
+        font-family: var(--font-serif);
+      }
+
+      .header-cta .btn {
+        display: none;
+      }
+
+      .menu-category-content.active {
+        grid-template-columns: 1fr;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .spotlight-floating-badge {
+        position: static;
+        max-width: 100%;
+        margin-top: 15px;
+      }
+
+      .whatsapp-floating {
+        bottom: 20px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       BARRA DE NAVEGAÇÃO
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        [NOME DA PADARIA]<span>.</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link" onclick="closeMenu()">Início</a></li>
+          <li><a href="#destaques" class="nav-link" onclick="closeMenu()">Especialidades</a></li>
+          <li><a href="#cardapio" class="nav-link" onclick="closeMenu()">Cardápio</a></li>
+          <li><a href="#sobre" class="nav-link" onclick="closeMenu()">Sobre nós</a></li>
+          <li><a href="#galeria" class="nav-link" onclick="closeMenu()">Galeria</a></li>
+          <li><a href="#contato" class="nav-link" onclick="closeMenu()">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+          Pedir no WhatsApp
+        </a>
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Abrir Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (PRIMEIRA TELA)
+         ========================================================================== -->
+    <section class="hero" id="home">
+      <img 
+        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1920&auto=format&fit=crop" 
+        alt="Mesa farta de pães artesanais, croissants e café colonial da padaria [NOME DA PADARIA] em [CIDADE]" 
+        class="hero-bg" 
+        loading="eager"
+      />
+      <div class="hero-content">
+        <span class="hero-badge">Padaria Artesanal & Café em [CIDADE]</span>
+        <h1 class="hero-title">[NOME DA PADARIA]<br><span style="font-style: italic; font-weight: 400; font-size: 0.9em;">O sabor que começa no forno.</span></h1>
+        <p class="hero-subtitle">Pães artesanais, doces frescos e aquele café que transforma qualquer momento em uma memória inesquecível.</p>
+        <div class="hero-actions">
+          <a href="#cardapio" class="btn btn-outline">Ver Cardápio</a>
+          <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="btn btn-primary" rel="noopener noreferrer">Pedir pelo WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Conheça</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRODUTOS EM DESTAQUE (FEITO TODOS OS DIAS PARA VOCÊ)
+         ========================================================================== -->
+    <section class="section-spacing featured" id="destaques">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fornadas Quentes</span>
+          <h2 class="section-title">Feito todos os dias para você</h2>
+          <p>Trabalhamos com ingredientes nobres, farinhas selecionadas e fermentação 100% natural, respeitando o tempo de maturação de cada receita.</p>
+        </div>
+
+        <div class="product-grid">
+          <!-- Card 1: Pães Artesanais -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Fermentação Natural</span>
+              <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?q=80&w=800&auto=format&fit=crop" alt="Pães artesanais de longa fermentação da padaria em [CIDADE]" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Pães Artesanais Sourdough</h3>
+              <p class="product-desc">Crostas crocantes, miolos arejados e sabor inconfundível produzido em até 36 horas de maturação lenta.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 24,00 / un</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20o%20P%C3%A3o%20Artesanal%20Sourdough." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Croissants -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Manteiga Pura</span>
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800&auto=format&fit=crop" alt="Croissant tradicional francês folhado e dourado" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Croissant Francês</h3>
+              <p class="product-desc">Milimetricamente folhado com manteiga de primeira linha, leve, dourado e incrivelmente crocante.</p>
+              <div class="product-footer">
+                <span class="product-price">R$ 14,00 / un</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20o%20Croissant%20Franc%C3%AAs." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Bolos -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Receita de Família</span>
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=800&auto=format&fit=crop" alt="Bolo de chocolate trufado e doces frescos em [CIDADE]" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Bolos Caseiros & Recheados</h3>
+              <p class="product-desc">Massas fofinhas feitas com ovos caipiras e coberturas cremosas preparadas diariamente no tacho.</p>
+              <div class="product-footer">
+                <span class="product-price">A partir de R$ 38,00</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Quero%20saber%20os%20sabores%20de%20bolos%20de%20hoje." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Doces Finos -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Confeitaria</span>
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=800&auto=format&fit=crop" alt="Doces finos, tortas e sobremesas da padaria" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Doces & Confeitaria Fina</h3>
+              <p class="product-desc">Tortas clássicas, brigadeiros artesanais com cacau belga, éclairs e sobremesas com equilíbrio impecável.</p>
+              <div class="product-footer">
+                <span class="product-price">A partir de R$ 8,00</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Quero%20pedir%20doces%20da%20confeitaria." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Cafés Especiais -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Grãos Selecionados</span>
+              <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop" alt="Xícara de cappuccino artesanal com latte art" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Cafés Especiais & Barista</h3>
+              <p class="product-desc">Grãos 100% arábica moídos na hora. Espressos encorpados, cappuccinos cremosos e métodos filtrados.</p>
+              <div class="product-footer">
+                <span class="product-price">A partir de R$ 9,00</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20caf%C3%A9s%20especiais." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Lanches e Sanduíches -->
+          <article class="product-card">
+            <div class="product-img-wrapper">
+              <span class="product-badge">Artesanal</span>
+              <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=800&auto=format&fit=crop" alt="Sanduíche artesanal na baguete com queijo e presunto parma" loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Lanches & Salgados Nobres</h3>
+              <p class="product-desc">Sanduíches naturais montados em baguetes quentes, quiches com queijo da Canastra e salgados assados na hora.</p>
+              <div class="product-footer">
+                <span class="product-price">A partir de R$ 16,00</span>
+                <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20um%20lanche%20artesanal." target="_blank" class="product-btn-order" rel="noopener noreferrer">Pedir &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO DE DESTAQUE (O CAFÉ DA MANHÃ COMEÇA AQUI)
+         ========================================================================== -->
+    <section class="section-spacing spotlight">
+      <div class="container">
+        <div class="spotlight-grid">
+          <div class="spotlight-image-container">
+            <img 
+              src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=1000&auto=format&fit=crop" 
+              alt="Café da manhã especial com pães frescos e café passado da padaria [NOME DA PADARIA]" 
+              class="spotlight-image" 
+              loading="lazy" 
+            />
+            <div class="spotlight-floating-badge">
+              <h4>Fornada Fresca</h4>
+              <p>Pão francês saindo quentinho a cada 30 minutos.</p>
+            </div>
+          </div>
+
+          <div class="spotlight-content">
+            <span class="section-tag">Momento Especial</span>
+            <h2>O café da manhã começa aqui</h2>
+            <p>Pães fresquinhos, café passado na hora e sabores preparados com carinho todos os dias. Acreditamos que o início do seu dia merece desacelerar e saborear o que há de melhor.</p>
+            <ul class="spotlight-features">
+              <li>Manteiga artesanal batida na casa e geleias de frutas sazonais</li>
+              <li>Pão de queijo preparado com queijo curado da Serra da Canastra</li>
+              <li>Ambiente climatizado, silencioso e acolhedor para você e sua família</li>
+            </ul>
+            <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20de%20caf%C3%A9%20da%20manh%C3%A3." target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+              Fazer Pedido de Café da Manhã
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CARDÁPIO COMPLETO COM ABAS INTERATIVAS
+         ========================================================================== -->
+    <section class="section-spacing menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Seleção Completa</span>
+          <h2 class="section-title">Nosso Cardápio</h2>
+          <p>Consulte nossos principais itens do dia. Aceitamos encomendas personalizadas para aniversários e eventos corporativos.</p>
+        </div>
+
+        <!-- Botões de Troca de Categoria -->
+        <div class="menu-tabs">
+          <button class="menu-tab-btn active" onclick="switchCategory('paes', this)">Pães</button>
+          <button class="menu-tab-btn" onclick="switchCategory('doces', this)">Doces & Confeitaria</button>
+          <button class="menu-tab-btn" onclick="switchCategory('cafes', this)">Cafés</button>
+          <button class="menu-tab-btn" onclick="switchCategory('lanches', this)">Lanches & Salgados</button>
+        </div>
+
+        <!-- Categoria 1: Pães -->
+        <div class="menu-category-content active" id="cat-paes">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Pão Francês Tradicional (kg)</h4>
+              <p class="menu-item-desc">Crocante por fora, miolo leve e macio. Sai do forno o dia todo.</p>
+            </div>
+            <span class="menu-item-price">R$ 21,90</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Pão de Queijo Canastra</h4>
+              <p class="menu-item-desc">Autêntico pão de queijo mineiro com polvilho artesanal e queijo curado.</p>
+            </div>
+            <span class="menu-item-price">R$ 6,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Pão Artesanal Multigrãos (Sourdough)</h4>
+              <p class="menu-item-desc">Linhaça dourada, sementes de girassol, gergelim e aveia integral.</p>
+            </div>
+            <span class="menu-item-price">R$ 26,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Croissant Tradicional de Manteiga</h4>
+              <p class="menu-item-desc">Folhado nobre com 72 dobras perfeitas e amanteigado equilibrado.</p>
+            </div>
+            <span class="menu-item-price">R$ 14,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Baguete Rústica com Alecrim e Sal Grosso</h4>
+              <p class="menu-item-desc">Farinha italiana tipo 00 com azeite de oliva extravirgem e ervas.</p>
+            </div>
+            <span class="menu-item-price">R$ 16,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Brioche com Gotas de Chocolate</h4>
+              <p class="menu-item-desc">Massa aveludada amanteigada enriquecida com chocolate meio amargo.</p>
+            </div>
+            <span class="menu-item-price">R$ 19,00</span>
+          </div>
+        </div>
+
+        <!-- Categoria 2: Doces -->
+        <div class="menu-category-content" id="cat-doces">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Bolo de Chocolate Intenso 70%</h4>
+              <p class="menu-item-desc">Fatia generosa com calda aveludada e ganache artesanal.</p>
+            </div>
+            <span class="menu-item-price">R$ 16,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Bolo de Cenoura com Brigadeiro Puxa</h4>
+              <p class="menu-item-desc">O clássico brasileiro com cobertura crocante e brilhante.</p>
+            </div>
+            <span class="menu-item-price">R$ 14,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Torta de Morango com Creme Pâtissière</h4>
+              <p class="menu-item-desc">Massa sablée crocante, creme de baunilha natural e frutas frescas.</p>
+            </div>
+            <span class="menu-item-price">R$ 18,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Brigadeiros Gourmet (Caixa 4 unid.)</h4>
+              <p class="menu-item-desc">Feitos com manteiga clarificada e confeitos belgas Callebaut.</p>
+            </div>
+            <span class="menu-item-price">R$ 22,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Folhado de Maçã e Canela</h4>
+              <p class="menu-item-desc">Massa folhada caramelizada com maçãs cozidas e toque de noz-moscada.</p>
+            </div>
+            <span class="menu-item-price">R$ 15,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Cheesecake de Frutas Vermelhas</h4>
+              <p class="menu-item-desc">Base de amêndoas, cream cheese suave e geleia caseira sem corantes.</p>
+            </div>
+            <span class="menu-item-price">R$ 21,00</span>
+          </div>
+        </div>
+
+        <!-- Categoria 3: Cafés -->
+        <div class="menu-category-content" id="cat-cafes">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Espresso Especial (Duplo)</h4>
+              <p class="menu-item-desc">Extração perfeita com notas florais e crema aveludada.</p>
+            </div>
+            <span class="menu-item-price">R$ 9,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Cappuccino Italiano</h4>
+              <p class="menu-item-desc">Espresso, leite vaporizado com microespuma sedosa e cacau em pó 100%.</p>
+            </div>
+            <span class="menu-item-price">R$ 14,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Café com Leite na Prensa Francesa</h4>
+              <p class="menu-item-desc">Equilíbrio nostálgico servido na mesa com jarra de leite fresco.</p>
+            </div>
+            <span class="menu-item-price">R$ 12,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Iced Caramel Latte</h4>
+              <p class="menu-item-desc">Café gelado com leite vaporizado frio, caramelo artesanal e gelo filtrado.</p>
+            </div>
+            <span class="menu-item-price">R$ 18,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Mocha com Chocolate Meio Amargo</h4>
+              <p class="menu-item-desc">Espresso duplo misturado a ganache cremosa e leite vaporizado.</p>
+            </div>
+            <span class="menu-item-price">R$ 17,50</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Chá Orgânico Selecionado</h4>
+              <p class="menu-item-desc">Infusão de folhas puras (Hortelã, Camomila com Mel ou Frutas Silvestres).</p>
+            </div>
+            <span class="menu-item-price">R$ 11,00</span>
+          </div>
+        </div>
+
+        <!-- Categoria 4: Lanches -->
+        <div class="menu-category-content" id="cat-lanches">
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Misto Quente Especial na Focaccia</h4>
+              <p class="menu-item-desc">Presunto tipo royale, queijo gruyère e azeite aromático prensado na chapa.</p>
+            </div>
+            <span class="menu-item-price">R$ 22,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Sanduíche Parma & Rúcula</h4>
+              <p class="menu-item-desc">Presunto de Parma, rúcula fresca, raspas de parmesão e redução balsâmica.</p>
+            </div>
+            <span class="menu-item-price">R$ 32,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Quiche Lorraine</h4>
+              <p class="menu-item-desc">Massa amanteigada quebradiça com bacon defumado e queijo emental cremoso.</p>
+            </div>
+            <span class="menu-item-price">R$ 19,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Empada de Palmito Pupunha</h4>
+              <p class="menu-item-desc">Massa podre tradicional que derrete na boca com recheio cremoso e úmido.</p>
+            </div>
+            <span class="menu-item-price">R$ 13,00</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Combo Matinal [NOME DA PADARIA]</h4>
+              <p class="menu-item-desc">1 Café com leite + 1 Croissant na chapa + 1 Suco de laranja natural 300ml.</p>
+            </div>
+            <span class="menu-item-price">R$ 29,90</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <h4 class="menu-item-name">Toast de Avocado com Ovo Poché</h4>
+              <p class="menu-item-desc">Pão artesanal tostado, avocado temperado, sementes e ovo orgânico mole.</p>
+            </div>
+            <span class="menu-item-price">R$ 27,00</span>
+          </div>
+        </div>
+
+        <div class="menu-footer-cta">
+          <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20do%20card%C3%A1pio." target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+            Fazer Pedido pelo WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SOBRE A PADARIA
+         ========================================================================== -->
+    <section class="section-spacing about" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Nossa Trajetória</span>
+            <h2>Tradição, sabor e carinho em cada receita.</h2>
+            <p>A <strong>[NOME DA PADARIA]</strong> nasceu da paixão pelo ofício artesanal. Acreditamos que o verdadeiro pão é aquele feito sem pressa, respeitando o tempo sagrado de fermentação, a pureza da água e a seleção das melhores farinhas.</p>
+            <p>O que nos move diariamente em <strong>[CIDADE]</strong> é o cheiro acolhedor de pão quente ao amanhecer e o sorriso no rosto de quem divide a mesa conosco. Nossas receitas combinam a tradição das boulangeries europeias com a alma e o calor da hospitalidade brasileira.</p>
+            
+            <div class="about-stats">
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Fermentação Natural</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">+15</div>
+                <div class="stat-label">Anos de Paixão</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">30min</div>
+                <div class="stat-label">Fornada Quente</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-img-group">
+            <img 
+              src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=1000&auto=format&fit=crop" 
+              alt="Padeiro artesão sovando massa na bancada de farinha na [NOME DA PADARIA]" 
+              class="about-main-img" 
+              loading="lazy" 
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERIA VISUAL
+         ========================================================================== -->
+    <section class="section-spacing gallery" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ambiente & Detalhes</span>
+          <h2 class="section-title">Nossa Galeria</h2>
+          <p>Um vislumbre da nossa rotina: a fumaça saindo do forno, o brilho dos doces e o carinho em cada detalhe.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item col-6 row-2">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop" alt="Pães artesanais rústicos saindo do forno" loading="lazy" />
+          </div>
+          <div class="gallery-item col-3">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Croissant folhado dourado" loading="lazy" />
+          </div>
+          <div class="gallery-item col-3">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Xícara de cappuccino com latte art" loading="lazy" />
+          </div>
+          <div class="gallery-item col-3">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Bolo de confeitaria fresca com cobertura" loading="lazy" />
+          </div>
+          <div class="gallery-item col-3">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" alt="Interior aconchegante da cafeteria e padaria" loading="lazy" />
+          </div>
+          <div class="gallery-item col-4">
+            <img src="https://images.unsplash.com/photo-1507138086030-616c3b6dd768?q=80&w=800&auto=format&fit=crop" alt="Padeiro preparando receitas artesanais" loading="lazy" />
+          </div>
+          <div class="gallery-item col-4">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=800&auto=format&fit=crop" alt="Sanduíche artesanal quentinho na vitrine" loading="lazy" />
+          </div>
+          <div class="gallery-item col-4">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=800&auto=format&fit=crop" alt="Clientes conversando e saboreando café na loja" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         AVALIAÇÕES DE CLIENTES
+         ========================================================================== -->
+    <section class="section-spacing reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Experiências</span>
+          <h2 class="section-title">O que nossos clientes dizem</h2>
+          <p>O reconhecimento diário de quem não abre mão de qualidade e afeto na mesa.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">“Sem dúvida a melhor padaria artesanal em [CIDADE]. O pão sourdough tem aquela casca rústica inigualável e o croissant parece saído de Paris.”</p>
+            </div>
+            <div class="review-author">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Cliente Mariana S." class="review-avatar" />
+              <div>
+                <h5 class="review-author-name">Mariana Silveira</h5>
+                <span class="review-author-status">Cliente assídua há 3 anos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">“O atendimento pelo WhatsApp é rápido e os pedidos chegam sempre quentinhos e muito bem embalados. O bolo de cenoura deles é o melhor da vida!”</p>
+            </div>
+            <div class="review-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Cliente Rodrigo M." class="review-avatar" />
+              <div>
+                <h5 class="review-author-name">Rodrigo Mendes</h5>
+                <span class="review-author-status">Morador do bairro</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-quote">“Um lugar acolhedor, com café barista impecável e pão de queijo da Canastra perfeito. Virou parada obrigatória das manhãs da minha família.”</p>
+            </div>
+            <div class="review-author">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=150&auto=format&fit=crop" alt="Cliente Beatriz C." class="review-avatar" />
+              <div>
+                <h5 class="review-author-name">Beatriz Camargo</h5>
+                <span class="review-author-status">Crítica gastronômica local</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LOCALIZAÇÃO & CONTATO
+         ========================================================================== -->
+    <section class="section-spacing contact-section" id="contato">
+      <div class="container">
+        <div class="contact-grid">
+          <div>
+            <span class="section-tag">Venha nos Visitar</span>
+            <h2 class="section-title">Estamos esperando por você</h2>
+            <p style="margin-bottom: 35px;">Será um prazer receber você em nossa loja para tomar um café passado na hora e sentir o aroma das nossas fornadas quentes.</p>
+
+            <div class="contact-info-block">
+              <span class="contact-label">Endereço em [CIDADE]</span>
+              <p class="contact-value">Rua das Flores, 123 - Centro<br>[CIDADE] - SP | CEP: 00000-000</p>
+            </div>
+
+            <div class="contact-info-block">
+              <span class="contact-label">Horário de Funcionamento</span>
+              <p class="contact-value">Terça a Sábado: 07h00 às 20h00<br>Domingos e Feriados: 07h30 às 14h00<br><em style="font-size: 0.9em; color: var(--accent-caramel);">(Segunda-feira: Fechado para descanso da massa)</em></p>
+            </div>
+
+            <div class="contact-info-block">
+              <span class="contact-label">Canais de Atendimento</span>
+              <p class="contact-value">
+                WhatsApp: <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es." target="_blank" style="color: var(--accent-caramel); font-weight: 700;">+[NÚMERO DO WHATSAPP]</a><br>
+                Instagram: <a href="https://instagram.com/[NOME DA PADARIA]" target="_blank" style="color: var(--accent-caramel);">@[NOME DA PADARIA]</a>
+              </p>
+            </div>
+
+            <div style="margin-top: 30px;">
+              <a href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" class="btn btn-primary" rel="noopener noreferrer">
+                Pedir agora pelo WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa Interativo do Google Maps -->
+          <div class="map-box">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197541627806!2d-46.65865242377395!3d-23.561349561571475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de localização da [NOME DA PADARIA]">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       BOTÃO FLUTUANTE DO WHATSAPP COM ANIMAÇÃO PULSE
+       ========================================================================== -->
+  <a 
+    href="https://wa.me/55[NÚMERO DO WHATSAPP]?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." 
+    class="whatsapp-floating" 
+    target="_blank" 
+    aria-label="Fazer pedido pelo WhatsApp"
+    rel="noopener noreferrer"
+  >
+    <div class="whatsapp-pulse"></div>
+    <svg viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.121.554 4.109 1.523 5.839l-1.615 5.905 6.06-1.59c1.674.912 3.587 1.436 5.62 1.436 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       RODAPÉ ELEGANTE COM DADOS SEO LOCAIS
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="footer-logo">[NOME DA PADARIA]</a>
+          <p class="footer-desc">
+            A padaria artesanal de referência em <strong>[CIDADE]</strong>. Pães de fermentação lenta, confeitaria sofisticada e a arte de reunir pessoas em volta de uma mesa memorável.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Navegação</h5>
+          <ul class="footer-links">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#destaques">Especialidades</a></li>
+            <li><a href="#cardapio">Cardápio & Preços</a></li>
+            <li><a href="#sobre">Nossa Tradição</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Atendimento</h5>
+          <p class="footer-contact-item"><strong>WhatsApp Pedidos:</strong><br>+[NÚMERO DO WHATSAPP]</p>
+          <p class="footer-contact-item"><strong>Instagram:</strong><br>@[NOME DA PADARIA]</p>
+          <p class="footer-contact-item"><strong>E-mail:</strong><br>contato@[NOME DA PADARIA].com.br</p>
+        </div>
+
+        <div>
+          <h5 class="footer-heading">Onde Estamos</h5>
+          <p class="footer-contact-item">Rua das Flores, 123 - Centro<br>[CIDADE] - SP</p>
+          <p class="footer-contact-item" style="color: var(--accent-gold); font-weight: 500;">
+            Terça a Sábado: 07h às 20h<br>Domingo: 07h30 às 14h
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> <strong>[NOME DA PADARIA]</strong>. Todos os direitos reservados. Padaria Artesanal em [CIDADE].</p>
+        <p>Desenvolvido para máxima experiência e sabor.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       JAVASCRIPT FUNCIONAL E OTIMIZADO
+       ========================================================================== -->
+  <script>
+    // 1. Configurações e Atualização de Ano
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // 2. Mudança de Estilo da Header ao Rolar (Scroll Effect)
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 3. Menu Mobile Toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    function closeMenu() {
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
+    }
+
+    // 4. Controle das Abas do Cardápio
+    function switchCategory(categoryKey, clickedBtn) {
+      // Remove a classe ativa de todos os botões
+      const buttons = document.querySelectorAll('.menu-tab-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // Remove a classe ativa de todos os conteúdos
+      const contents = document.querySelectorAll('.menu-category-content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Ativa o botão e a categoria correspondente
+      clickedBtn.classList.add('active');
+      const targetContent = document.getElementById(`cat-${categoryKey}`);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    }
+
+    // 5. Fechamento do menu ao clicar fora no celular
+    document.addEventListener('click', (e) => {
+      if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

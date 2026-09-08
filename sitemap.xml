@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kmboost.com.br/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/email-corporativo.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/seo.html</loc>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/tipos-de-sites.html</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/por-que-ter-um-site.html</loc>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/barbearia.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://kmboost.com.br/padaria.html</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>

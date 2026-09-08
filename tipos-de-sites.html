@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tipos de sites para empresas: Qual o ideal para seu negócio? | K&M Boost</title>
+  <meta name="description" content="Entenda as diferenças entre sites institucionais, landing pages, lojas virtuais e catálogos digitais para escolher a melhor opção para sua empresa." />
+  <link rel="canonical" href="https://kmboost.com.br/tipos-de-sites.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #06080f;
+      --card-bg: #0d121f;
+      --border: #1b2438;
+      --text-white: #ffffff;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.12);
+      --whatsapp: #25D366;
+      --whatsapp-hover: #20ba59;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    
+    body {
+      background-color: var(--bg);
+      color: var(--text-white);
+      font-family: var(--font);
+      line-height: 1.75;
+      background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 50%);
+      background-repeat: no-repeat;
+    }
+
+    .container { width: 90%; max-width: 900px; margin: 0 auto; }
+
+    header {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(6, 8, 15, 0.92);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .brand-logo-img { height: 38px; width: auto; object-fit: contain; }
+    
+    .btn-voltar {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .btn-voltar:hover { color: #fff; }
+
+    .article-wrap { padding: 4.5rem 0 6rem; }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead-text {
+      font-size: 1.18rem;
+      color: #e2e8f0;
+      margin-bottom: 3rem;
+      line-height: 1.7;
+    }
+
+    /* GRID DOS TIPOS DE SITE */
+    .types-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+      margin: 2.5rem 0 3.5rem;
+    }
+
+    .type-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: all 0.2s ease;
+    }
+
+    .type-card:hover {
+      border-color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .type-card h3 {
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .type-card p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      margin: 0;
+    }
+
+    .conclusion-text {
+      font-size: 1.15rem;
+      color: #fff;
+      font-weight: 700;
+      line-height: 1.8;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.2rem;
+      margin: 2rem 0;
+    }
+
+    .cta-box {
+      background: #0d1424;
+      border: 1px solid var(--accent);
+      border-radius: 14px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-top: 3.5rem;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    }
+
+    .cta-box h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+      font-weight: 800;
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--whatsapp);
+      color: #fff;
+      padding: 0.95rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      margin-top: 1.2rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-wa:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2rem; }
+      .article-wrap { padding: 3rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="logo.png" alt="K&M Boost" class="brand-logo-img" />
+      </a>
+      <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+    </div>
+  </header>
+
+  <main class="container article-wrap">
+    <span class="badge">Guia Estratégico</span>
+    <h1>Tipos de sites para empresas: Qual é o ideal para o seu negócio?</h1>
+
+    <p class="lead-text">
+      Nem todo site tem o mesmo objetivo, e entender isso é essencial para escolher a melhor solução para o seu negócio. Cada tipo de site é pensado para atender uma necessidade específica, seja apresentar a empresa, gerar mais contatos, vender produtos ou fortalecer a presença digital.
+    </p>
+
+    <div class="types-grid">
+      <!-- 1. INSTITUCIONAL -->
+      <div class="type-card">
+        <h3>🏢 Site Institucional</h3>
+        <p>
+          Ideal para empresas que querem transmitir credibilidade e apresentar sua história, serviços, estrutura e diferenciais. Ele funciona como a base da presença online e ajuda o cliente a conhecer melhor a marca.
+        </p>
+      </div>
+
+      <!-- 2. LANDING PAGE -->
+      <div class="type-card">
+        <h3>🎯 Landing Page</h3>
+        <p>
+          Indicada para campanhas, anúncios e ações com foco em conversão. Seu objetivo é levar o visitante a tomar uma decisão rápida, como pedir orçamento, preencher um formulário ou entrar em contato direto pelo WhatsApp.
+        </p>
+      </div>
+
+      <!-- 3. LOJA VIRTUAL -->
+      <div class="type-card">
+        <h3>🛒 Loja Virtual (E-commerce)</h3>
+        <p>
+          A melhor opção para quem deseja vender produtos pela internet com praticidade, organização e alcance maior. Ela permite expor produtos, receber pedidos e facilitar o processo de compra automatizado.
+        </p>
+      </div>
+
+      <!-- 4. CATÁLOGO DIGITAL -->
+      <div class="type-card">
+        <h3>📋 Catálogo Digital</h3>
+        <p>
+          Perfeito para empresas que querem apresentar produtos ou serviços de forma mais visual e organizada, sem necessariamente vender online. É uma solução muito usada por indústrias, distribuidores e negócios que trabalham com orçamento sob demanda.
+        </p>
+      </div>
+
+      <!-- 5. PERSONALIZADOS -->
+      <div class="type-card">
+        <h3>⚡ Sites Personalizados</h3>
+        <p>
+          Desenvolvidos de acordo com as necessidades de cada empresa. Nesse caso, o projeto é pensado para unir estratégia, identidade visual e funcionalidade, criando uma experiência mais alinhada aos objetivos do negócio.
+        </p>
+      </div>
+    </div>
+
+    <div class="conclusion-text">
+      Escolher o tipo certo de site é o primeiro passo para ter resultados reais na internet. Mais do que estar online, é importante ter uma presença digital que trabalhe a favor da sua empresa.
+    </div>
+
+    <!-- CTA FINAL DE CONVERSÃO -->
+    <div class="cta-box">
+      <h3>Não sabe qual modelo faz mais sentido para você?</h3>
+      <p style="max-width: 580px; margin: 0 auto; color: var(--text-muted);">
+        A equipe da K&M Boost avalia o momento do seu comércio e indica a solução exata para você não gastar à toa e ter retorno rápido.
+      </p>
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Li%20o%20guia%20de%20tipos%20de%20sites%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o%20para%20o%20meu%20neg%C3%B3cio." target="_blank" class="btn-wa">
+        Conversar com Especialista no WhatsApp
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>
