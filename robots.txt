@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /privacidade.html
+Disallow: /obrigado.html
+Disallow: /404.html
 
-Sitemap: https://kmboost.com.br/sitemap.xml
+Sitemap: https://kmbs.com.br/sitemap.xml
