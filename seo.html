@@ -3,9 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JDFH1P1BY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5JDFH1P1BY');
+  </script>
+
   <title>O que é SEO e Por que sua Empresa Precisa? | K&M Boost</title>
   <meta name="description" content="Entenda o que é SEO, a diferença entre busca orgânica e tráfego pago e por que investir no posicionamento do seu site no Google." />
-  <link rel="canonical" href="https://kmboost.com.br/seo.html" />
+  <link rel="canonical" href="https://kmbs.com.br/seo.html" />
   <link rel="icon" type="image/png" href="favicon.png" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,9 +35,7 @@
       --whatsapp-hover: #20ba59;
       --font: 'Plus Jakarta Sans', sans-serif;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    
     body {
       background-color: var(--bg);
       color: var(--text-white);
@@ -36,9 +44,7 @@
       background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 50%);
       background-repeat: no-repeat;
     }
-
     .container { width: 90%; max-width: 900px; margin: 0 auto; }
-
     header {
       padding: 1.2rem 0;
       border-bottom: 1px solid var(--border);
@@ -48,136 +54,40 @@
       top: 0;
       z-index: 100;
     }
-
     .header-inner { display: flex; justify-content: space-between; align-items: center; }
     .brand-logo-img { height: 38px; width: auto; object-fit: contain; }
-    
-    .btn-voltar {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.92rem;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
+    .btn-voltar { color: var(--text-muted); text-decoration: none; font-size: 0.92rem; font-weight: 600; transition: color 0.2s; }
     .btn-voltar:hover { color: #fff; }
-
     .article-wrap { padding: 4.5rem 0 6rem; }
-
     .badge {
-      display: inline-block;
-      padding: 6px 14px;
-      background: rgba(59, 130, 246, 0.08);
-      border: 1px solid rgba(59, 130, 246, 0.25);
-      border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 1.5rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      display: inline-block; padding: 6px 14px; background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25); border-radius: 50px; font-size: 0.8rem;
+      font-weight: 700; color: var(--accent); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.05em;
     }
-
-    h1 {
-      font-size: 2.7rem;
-      font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 2.2rem;
-      letter-spacing: -0.02em;
-    }
-
-    h2 {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #fff;
-      margin: 3rem 0 1.2rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      letter-spacing: -0.01em;
-    }
-
-    h2 span {
-      color: var(--accent);
-    }
-
-    p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      margin-bottom: 1.6rem;
-    }
-
-    /* CARDS COMPARATIVOS */
-    .compare-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin: 2rem 0;
-    }
-
-    .compare-box {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 2rem;
-    }
-
-    .compare-box h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.8rem;
-      color: #fff;
-    }
-
+    h1 { font-size: 2.7rem; font-weight: 800; line-height: 1.2; margin-bottom: 2.2rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.6rem; font-weight: 800; color: #fff; margin: 3rem 0 1.2rem; display: flex; align-items: center; gap: 10px; }
+    h2 span { color: var(--accent); }
+    p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.6rem; }
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
+    .compare-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; }
+    .compare-box h3 { font-size: 1.25rem; margin-bottom: 0.8rem; color: #fff; }
     .compare-box.seo-box { border-top: 3px solid var(--accent); }
     .compare-box.ads-box { border-top: 3px solid #eab308; }
-
     .highlight-quote {
-      border-left: 3px solid var(--accent);
-      background: rgba(59, 130, 246, 0.04);
-      padding: 1.5rem 1.8rem;
-      border-radius: 0 10px 10px 0;
-      margin: 2.5rem 0;
-      color: #e2e8f0;
-      font-size: 1.1rem;
-      font-weight: 600;
+      border-left: 3px solid var(--accent); background: rgba(59, 130, 246, 0.04);
+      padding: 1.5rem 1.8rem; border-radius: 0 10px 10px 0; margin: 2.5rem 0; color: #e2e8f0; font-size: 1.1rem; font-weight: 600;
     }
-
     .cta-box {
-      background: #0d1424;
-      border: 1px solid var(--accent);
-      border-radius: 14px;
-      padding: 2.5rem;
-      text-align: center;
-      margin-top: 4rem;
-      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+      background: #0d1424; border: 1px solid var(--accent); border-radius: 14px;
+      padding: 2.5rem; text-align: center; margin-top: 4rem; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
     }
-
-    .cta-box h3 {
-      font-size: 1.6rem;
-      margin-bottom: 0.8rem;
-      font-weight: 800;
-    }
-
+    .cta-box h3 { font-size: 1.6rem; margin-bottom: 0.8rem; font-weight: 800; }
     .btn-wa {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--whatsapp);
-      color: #fff;
-      padding: 0.95rem 2rem;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1rem;
-      text-decoration: none;
-      margin-top: 1.2rem;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      display: inline-flex; align-items: center; gap: 8px; background: var(--whatsapp);
+      color: #fff; padding: 0.95rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1rem;
+      text-decoration: none; margin-top: 1.2rem; transition: all 0.2s ease; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
     }
-
-    .btn-wa:hover {
-      background: var(--whatsapp-hover);
-      transform: translateY(-2px);
-    }
-
+    .btn-wa:hover { background: var(--whatsapp-hover); transform: translateY(-2px); }
     @media (max-width: 768px) {
       h1 { font-size: 2rem; }
       .compare-grid { grid-template-columns: 1fr; }
@@ -186,7 +96,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <div class="container header-inner">
       <a href="index.html">
@@ -200,7 +109,6 @@
     <span class="badge">Guia Completo de Posicionamento</span>
     <h1>O que é SEO e por que sua empresa precisa estar bem posicionada?</h1>
 
-    <!-- SEÇÃO 1 -->
     <h2><span>01.</span> O que é SEO?</h2>
     <p>
       SEO, ou <em>Search Engine Optimization</em> (Otimização para Mecanismos de Busca), é um conjunto de técnicas aplicadas em um site para melhorar seu posicionamento nos resultados de busca do Google e de outros mecanismos de pesquisa. O objetivo é fazer com que a empresa seja encontrada com mais facilidade por pessoas que já estão procurando pelos produtos ou serviços que ela oferece.
@@ -212,7 +120,6 @@
       Mais do que atrair acessos, o SEO atrai pessoas com real interesse no que a empresa oferece. Isso torna o tráfego mais qualificado e aumenta as chances de conversão, fortalecendo a presença digital da marca no médio e longo prazo.
     </p>
 
-    <!-- SEÇÃO 2 -->
     <h2><span>02.</span> Diferença entre SEO e Tráfego Pago</h2>
     <p>
       SEO e tráfego pago são estratégias diferentes, mas complementares. O SEO trabalha o posicionamento orgânico do site, fazendo com que ele apareça nos resultados naturais do Google. Já o tráfego pago utiliza anúncios para colocar a empresa em destaque de forma imediata.
@@ -243,7 +150,6 @@
       Outra diferença importante é a percepção do usuário. Muitas pessoas confiam mais nos resultados orgânicos, pois entendem que eles conquistaram aquela posição por relevância, e não apenas por investimento em anúncio. Por isso, o ideal para muitas empresas é unir as duas estratégias: uma para resultado rápido e outra para crescimento sólido e sustentável.
     </p>
 
-    <!-- SEÇÃO 3 -->
     <h2><span>03.</span> Por que ter SEO no seu site?</h2>
     <p>
       Ter SEO é investir na capacidade da sua empresa de ser encontrada no momento certo, pelas pessoas certas. Quando um cliente pesquisa no Google por um produto ou serviço, ele normalmente já tem interesse ou intenção de compra. Se o seu site está bem posicionado, as chances de atrair esse potencial cliente aumentam muito.
@@ -259,7 +165,6 @@
       "Em resumo, ter SEO é aumentar sua presença digital, atrair visitantes qualificados, fortalecer sua marca e criar uma base mais consistente para gerar contatos e vendas pela internet."
     </div>
 
-    <!-- CTA FINAL -->
     <div class="cta-box">
       <h3>Quer que sua empresa seja encontrada no Google?</h3>
       <p style="max-width: 580px; margin: 0 auto; color: var(--text-muted);">
@@ -270,6 +175,5 @@
       </a>
     </div>
   </main>
-
 </body>
 </html>
