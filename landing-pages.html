@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JDFH1P1BY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5JDFH1P1BY');
+  </script>
+
+  <title>Landing Pages de Alta Conversão para Empresas | K&M Boost</title>
+  <meta name="description" content="Páginas profissionais para apresentar serviços, gerar pedidos de orçamento ou receber tráfego de anúncios no Google e Instagram. A partir de R$ 497." />
+  <link rel="canonical" href="https://kmbs.com.br/landing-pages.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #06080f;
+      --card-bg: #0d121f;
+      --border: #1b2438;
+      --text-white: #ffffff;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.12);
+      --whatsapp: #25D366;
+      --whatsapp-hover: #20ba59;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    
+    body {
+      background-color: var(--bg);
+      color: var(--text-white);
+      font-family: var(--font);
+      line-height: 1.75;
+      background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 50%);
+      background-repeat: no-repeat;
+    }
+
+    .container { width: 90%; max-width: 1040px; margin: 0 auto; }
+
+    header {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(6, 8, 15, 0.92);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .brand-logo-img { height: 38px; width: auto; object-fit: contain; }
+    
+    .btn-voltar {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .btn-voltar:hover { color: #fff; }
+
+    /* HERO */
+    .hero-lp { padding: 4.5rem 0 3rem; text-align: center; }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead-p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 760px;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* GRID DE PLANOS */
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+      margin: 3rem 0 2rem;
+      align-items: stretch;
+    }
+
+    .plan-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.2rem 1.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .plan-card.featured {
+      border: 2px solid var(--accent);
+      background: #0d1527;
+      box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
+    }
+
+    .plan-badge-top {
+      position: absolute;
+      top: -13px;
+      right: 20px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .plan-header h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .plan-sub {
+      color: #93c5fd;
+      font-size: 0.9rem;
+      font-weight: 600;
+      min-height: 24px;
+    }
+
+    .plan-price {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #fff;
+      margin: 1.2rem 0;
+    }
+
+    .plan-desc-text {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      min-height: 48px;
+    }
+
+    .section-title-sm {
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    .chips-ideal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .chip-item {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 3px 8px;
+      font-size: 0.78rem;
+      color: #cbd5e1;
+    }
+
+    .plan-checklist {
+      list-style: none;
+      margin-bottom: 1.8rem;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+
+    .plan-checklist li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.5;
+    }
+
+    .plan-checklist li span { color: var(--whatsapp); font-weight: 800; }
+
+    .example-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+
+    .example-box strong { color: #fff; display: block; margin-bottom: 3px; }
+
+    .btn-plan {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0.9rem;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-plan-green { background: var(--whatsapp); color: #fff; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3); }
+    .btn-plan-green:hover { background: var(--whatsapp-hover); transform: translateY(-2px); }
+    .btn-plan-ghost { background: rgba(255, 255, 255, 0.05); color: #fff; border: 1px solid var(--border); }
+    .btn-plan-ghost:hover { border-color: var(--accent); background: rgba(255, 255, 255, 0.08); }
+
+    /* GUIA DE ESCOLHA */
+    .decision-section {
+      background: #090e18;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin: 4rem 0 2rem;
+    }
+
+    .decision-section h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .decision-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+    }
+
+    .decision-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.4rem;
+      text-align: center;
+    }
+
+    .decision-card span { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .decision-card strong { font-size: 1.15rem; color: #fff; display: block; }
+    .decision-card small { color: var(--accent); font-weight: 700; font-size: 0.95rem; }
+
+    /* CUSTOM BOX */
+    .custom-box {
+      background: rgba(59, 130, 246, 0.05);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 14px;
+      padding: 2.5rem;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    .custom-box h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.6rem; color: #fff; }
+    .custom-box p { color: var(--text-muted); max-width: 680px; margin: 0 auto 1.5rem; }
+
+    .disclaimer-text {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin: 1.5rem 0 4rem;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+      background: #04060b;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 868px) {
+      h1 { font-size: 2.1rem; }
+      .plans-grid, .decision-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="logo.png" alt="K&M Boost" class="brand-logo-img" />
+      </a>
+      <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- HERO -->
+    <div class="hero-lp">
+      <span class="badge">Modelos & Pacotes</span>
+      <h1>Escolha a Landing Page ideal para sua empresa</h1>
+      <p class="lead-p">
+        Cada empresa possui um objetivo diferente. Criamos três opções estratégicas de Landing Pages: desde uma página profissional para apresentar um serviço até uma estrutura completa para campanhas de tráfego pago.
+      </p>
+    </div>
+
+    <!-- 3 PACOTES -->
+    <div class="plans-grid">
+      
+      <!-- 1. START -->
+      <div class="plan-card">
+        <div>
+          <div class="plan-header">
+            <h2>🚀 START</h2>
+            <div class="plan-sub">Landing Page de Serviço</div>
+          </div>
+
+          <div class="plan-price">R$ 497</div>
+
+          <p class="plan-desc-text">
+            Para empresas que querem apresentar e divulgar um serviço específico de forma profissional na internet.
+          </p>
+
+          <div class="section-title-sm">Ideal para:</div>
+          <div class="chips-ideal">
+            <span class="chip-item">Prestadores de serviços</span>
+            <span class="chip-item">Autônomos</span>
+            <span class="chip-item">Agências</span>
+            <span class="chip-item">Empresas locais</span>
+          </div>
+
+          <div class="section-title-sm">O que inclui:</div>
+          <ul class="plan-checklist">
+            <li><span>✓</span> Página personalizada</li>
+            <li><span>✓</span> Apresentação do serviço</li>
+            <li><span>✓</span> Benefícios e diferenciais</li>
+            <li><span>✓</span> Seção "Como funciona"</li>
+            <li><span>✓</span> Depoimentos de clientes</li>
+            <li><span>✓</span> FAQ de dúvidas</li>
+            <li><span>✓</span> Botões de WhatsApp integrados</li>
+            <li><span>✓</span> Formulário de contato</li>
+            <li><span>✓</span> Design 100% responsivo</li>
+            <li><span>✓</span> SEO básico configurado</li>
+          </ul>
+
+          <div class="example-box">
+            <strong>Exemplo:</strong>
+            Página dedicada exclusivamente a um serviço (ex: "Criação de Sites"), mostrando benefícios e conduzindo direto ao WhatsApp.
+          </div>
+        </div>
+
+        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20START%20(R$%20497)%20para%20Landing%20Page." target="_blank" class="btn-plan btn-plan-ghost">
+          Quero o plano START
+        </a>
+      </div>
+
+      <!-- 2. PRO (MAIS ESCOLHIDO) -->
+      <div class="plan-card featured">
+        <span class="plan-badge-top">⭐ Mais Escolhido</span>
+        <div>
+          <div class="plan-header">
+            <h2>⭐ PRO</h2>
+            <div class="plan-sub">Orçamento ou Agendamento</div>
+          </div>
+
+          <div class="plan-price">R$ 697</div>
+
+          <p class="plan-desc-text">
+            Para empresas que precisam gerar contatos ativos, pedidos de orçamento detalhados ou agendamentos diários.
+          </p>
+
+          <div class="section-title-sm">Ideal para:</div>
+          <div class="chips-ideal">
+            <span class="chip-item">Barbearias e Salões</span>
+            <span class="chip-item">Clínicas e Estúdios</span>
+            <span class="chip-item">Construção e Pintores</span>
+            <span class="chip-item">Eletricistas</span>
+            <span class="chip-item">Móveis planejados</span>
+          </div>
+
+          <div class="section-title-sm">O que inclui:</div>
+          <ul class="plan-checklist">
+            <li><span>✓</span> <strong>Tudo do plano START</strong></li>
+            <li><span>✓</span> Estrutura focada em geração de contatos</li>
+            <li><span>✓</span> Formulário personalizado</li>
+            <li><span>✓</span> Campos específicos para o negócio</li>
+            <li><span>✓</span> Integração inteligente com WhatsApp</li>
+            <li><span>✓</span> Seção de serviços em destaque</li>
+            <li><span>✓</span> Chamadas para ação estratégicas</li>
+            <li><span>✓</span> Estrutura para orçamento ou agendamento</li>
+            <li><span>✓</span> Design responsivo e SEO básico</li>
+          </ul>
+
+          <div class="example-box">
+            <strong>Exemplo de Fluxo:</strong>
+            Orçamento: Nome ➔ WhatsApp ➔ Serviço ➔ Solicitar.<br>
+            Agendamento: Serviço ➔ Profissional ➔ Data/Hora ➔ Agendar.
+          </div>
+        </div>
+
+        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20PRO%20(R$%20697)%20para%20Landing%20Page." target="_blank" class="btn-plan btn-plan-green">
+          Quero o plano PRO
+        </a>
+      </div>
+
+      <!-- 3. CONVERSION -->
+      <div class="plan-card">
+        <div>
+          <div class="plan-header">
+            <h2>🔥 CONVERSION</h2>
+            <div class="plan-sub">Para Tráfego Pago & Anúncios</div>
+          </div>
+
+          <div class="plan-price">R$ 997</div>
+
+          <p class="plan-desc-text">
+            Para empresas que vão anunciar no Google Ads, Instagram Ads ou Facebook Ads e precisam de uma página preparada para receber esse tráfego.
+          </p>
+
+          <div class="section-title-sm">Ideal para:</div>
+          <div class="chips-ideal">
+            <span class="chip-item">Google Ads</span>
+            <span class="chip-item">Instagram Ads</span>
+            <span class="chip-item">Facebook Ads</span>
+            <span class="chip-item">Campanhas e Ofertas</span>
+          </div>
+
+          <div class="section-title-sm">O que inclui:</div>
+          <ul class="plan-checklist">
+            <li><span>✓</span> <strong>Tudo do plano PRO</strong></li>
+            <li><span>✓</span> Estrutura voltada para campanhas</li>
+            <li><span>✓</span> Headline estratégica com gancho</li>
+            <li><span>✓</span> Oferta principal em destaque</li>
+            <li><span>✓</span> Benefícios organizados estrategicamente</li>
+            <li><span>✓</span> Elementos de prova social</li>
+            <li><span>✓</span> CTAs de alta taxa de clique</li>
+            <li><span>✓</span> Integração com WhatsApp ou formulário</li>
+            <li><span>✓</span> Rastreamento básico de conversão</li>
+          </ul>
+
+          <div class="example-box">
+            <strong>Como funciona:</strong>
+            Anúncio ➔ Landing Page ➔ Ação.<br>
+            O visitante chega do anúncio e encontra exatamente a oferta prometida, sem distrações.
+          </div>
+        </div>
+
+        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20CONVERSION%20(R$%20997)%20para%20Tr%C3%A1fego%20Pago." target="_blank" class="btn-plan btn-plan-ghost">
+          Quero o plano CONVERSION
+        </a>
+      </div>
+
+    </div>
+
+    <!-- GUIA DE DECISÃO RÁPIDA -->
+    <div class="decision-section">
+      <h3>🤔 Qual plano escolher?</h3>
+      <div class="decision-grid">
+        <div class="decision-card">
+          <span>Quero divulgar um serviço</span>
+          <strong>Plano START</strong>
+          <small>R$ 497</small>
+        </div>
+
+        <div class="decision-card" style="border-color: var(--accent);">
+          <span>Quero receber orçamentos ou agendamentos</span>
+          <strong>Plano PRO ⭐</strong>
+          <small>R$ 697</small>
+        </div>
+
+        <div class="decision-card">
+          <span>Vou investir em anúncios (Google / Meta)</span>
+          <strong>Plano CONVERSION</strong>
+          <small>R$ 997</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOX DE PROJETOS PERSONALIZADOS -->
+    <div class="custom-box">
+      <h3>Precisa de algo diferente?</h3>
+      <p>
+        Cada projeto pode ter necessidades específicas. Se sua empresa precisar de integrações avançadas, ferramentas externas de agendamento ou uma arquitetura fora dos pacotes, avaliamos seu projeto e criamos uma solução sob medida.
+      </p>
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Preciso%20de%20uma%20Landing%20Page%20personalizada%20com%20estrutura%20espec%C3%ADfica." target="_blank" class="btn-plan btn-plan-green" style="display:inline-flex; width:auto; padding:0.9rem 2.2rem;">
+        Solicitar Orçamento Personalizado
+      </a>
+    </div>
+
+    <p class="disclaimer-text">
+      * Os valores apresentados são preços-base iniciais e podem variar conforme a complexidade, funcionalidades extras e integrações do projeto.<br>
+      * Custos de domínio (Registro.br) e hospedagem são contratados à parte em nome do cliente, garantindo total posse dos seus canais.
+    </p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 K&M Boost Solution. Todos os direitos reservados. • <a href="privacidade.html" style="color: var(--text-muted); text-decoration: underline;">Política de Privacidade</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
