@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JDFH1P1BY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5JDFH1P1BY');
+  </script>
+
+  <title>Criação de Sites Profissionais para Empresas | K&M Boost</title>
+  <meta name="description" content="Seu negócio merece um espaço próprio na internet. Sites institucionais, locais, para restaurantes e com agendamento a partir de R$ 697." />
+  <link rel="canonical" href="https://kmbs.com.br/criacao-de-sites.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #06080f;
+      --card-bg: #0d121f;
+      --card-hover: #141c30;
+      --border: #1b2438;
+      --text-white: #ffffff;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.12);
+      --whatsapp: #25D366;
+      --whatsapp-hover: #20ba59;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    
+    body {
+      background-color: var(--bg);
+      color: var(--text-white);
+      font-family: var(--font);
+      line-height: 1.75;
+      background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 45%);
+      background-repeat: no-repeat;
+    }
+
+    .container { width: 90%; max-width: 980px; margin: 0 auto; }
+
+    header {
+      padding: 1.2rem 0;
+      border-bottom: 1px solid var(--border);
+      background: rgba(6, 8, 15, 0.94);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .brand-logo-img { height: 38px; width: auto; object-fit: contain; }
+    
+    .btn-voltar {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .btn-voltar:hover { color: #fff; }
+
+    /* HERO */
+    .hero-sites { padding: 5rem 0 3.5rem; text-align: center; }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead-p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 4.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-head span {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-head h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-top: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head p {
+      color: var(--text-muted);
+      margin-top: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    /* CARDS */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.2rem;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+
+    .card h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    /* FORMATOS DE SITES */
+    .format-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.2rem;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.2s ease;
+    }
+
+    .format-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .format-top h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .format-desc {
+      color: #cbd5e1;
+      font-size: 1.02rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .format-ideal {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-bottom: 1.2rem;
+    }
+
+    .format-ideal strong { color: #fff; }
+
+    .checklist-format {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1.5rem;
+      margin: 1.2rem 0 1.8rem;
+      font-size: 0.92rem;
+      color: #cbd5e1;
+    }
+
+    .checklist-format li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checklist-format li span { color: var(--whatsapp); font-weight: 800; }
+
+    .format-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid var(--border);
+      padding-top: 1.4rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .format-price {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .format-price small {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      display: block;
+    }
+
+    /* TABELA DE PREÇOS */
+    .table-box {
+      overflow-x: auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin: 2.5rem 0 1.5rem;
+    }
+
+    table.price-summary {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.98rem;
+    }
+
+    table.price-summary th, table.price-summary td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    table.price-summary th {
+      background: #090e18;
+      color: #fff;
+      font-weight: 800;
+    }
+
+    table.price-summary td { color: #e2e8f0; }
+    table.price-summary td strong { color: var(--whatsapp); font-size: 1.1rem; }
+
+    /* AVISO TRANSPARÊNCIA */
+    .transparency-box {
+      background: rgba(59, 130, 246, 0.05);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      padding: 1.4rem 1.8rem;
+      margin: 2.5rem 0;
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .transparency-box strong { color: #fff; }
+
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .faq-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem;
+    }
+
+    .faq-card h4 { font-size: 1.1rem; color: #fff; margin-bottom: 0.6rem; }
+    .faq-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0.85rem 1.8rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-wa {
+      background: var(--whatsapp);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-wa:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+      background: #04060b;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 868px) {
+      h1 { font-size: 2.2rem; }
+      .grid-2, .grid-3, .faq-grid { grid-template-columns: 1fr; }
+      .checklist-format { grid-template-columns: 1fr; }
+      .format-bottom { flex-direction: column; align-items: flex-start; }
+      .format-bottom a { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="logo.png" alt="K&M Boost" class="brand-logo-img" />
+      </a>
+      <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO CONSULTIVO -->
+    <div class="hero-sites">
+      <span class="badge">Presença Digital Profissional</span>
+      <h1>Criação de Sites</h1>
+      <p class="lead-p">Seu negócio merece um espaço próprio na internet.</p>
+      
+      <p style="color: var(--text-muted); max-width: 720px; margin: 0 auto 2.5rem; font-size: 1.05rem;">
+        Um site é o espaço online da sua empresa. É onde seus clientes podem conhecer seu negócio, entender seus serviços, encontrar suas informações e saber exatamente como entrar em contato. A <strong>K&M Boost</strong> cria sites personalizados de acordo com o modelo, objetivo e realidade de cada empresa.
+      </p>
+
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20minha%20empresa." target="_blank" class="btn btn-wa">
+        Quero criar meu site no WhatsApp ↗
+      </a>
+    </div>
+
+    <!-- O QUE É UM SITE -->
+    <section>
+      <div class="section-head">
+        <span>Conceito Simples</span>
+        <h2>Mas o que é um site?</h2>
+        <p>Imagine que sua empresa tenha uma <strong>"vitrine digital"</strong> que pode ser acessada de qualquer lugar, a qualquer hora.</p>
+      </div>
+
+      <div class="card" style="max-width: 820px; margin: 0 auto;">
+        <p style="color: #fff; font-weight: 700; margin-bottom: 1rem;">Nessa vitrine, você apresenta com clareza:</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.8rem; color: var(--text-muted); font-size: 0.95rem;">
+          <div>✓ Quem é sua empresa</div>
+          <div>✓ O que você oferece</div>
+          <div>✓ Seus serviços e fotos</div>
+          <div>✓ Informações de contato</div>
+          <div>✓ Botão direto de WhatsApp</div>
+          <div>✓ Localização e mapa</div>
+          <div>✓ Horários de atendimento</div>
+          <div>✓ Depoimentos de clientes</div>
+        </div>
+        <div style="margin-top: 1.5rem; padding-top: 1.2rem; border-top: 1px solid var(--border); font-size: 0.92rem; color: #93c5fd;">
+          💡 <strong>Em vez de depender apenas de redes sociais</strong>, sua empresa passa a ter um endereço oficial na internet para reunir e controlar todas as suas informações.
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUE TER UM SITE -->
+    <section>
+      <div class="section-head">
+        <span>Benefícios Reais</span>
+        <h2>Por que ter um site próprio?</h2>
+        <p>Apresente suas informações de forma organizada e facilite o caminho para o cliente conhecer seu trabalho e fechar negócio.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>🌐 Espaço Próprio</h3>
+          <p>Seu negócio possui um endereço exclusivo (<em>suaempresa.com.br</em>) sem depender das oscilações do algoritmo do Instagram.</p>
+        </div>
+
+        <div class="card">
+          <h3>📱 Acessível em Tudo</h3>
+          <p>Construído para abrir com fluidez em celulares, tablets e computadores, com carregamento rápido.</p>
+        </div>
+
+        <div class="card">
+          <h3>💬 Contato Facilitado</h3>
+          <p>Botões inteligentes de WhatsApp e formulários enxutos que colocam o cliente conversando com você em 1 clique.</p>
+        </div>
+
+        <div class="card">
+          <h3>🏢 Apresentação Completa</h3>
+          <p>Reúna serviços, histórico, fotos reais de trabalhos e diferenciais em um único ambiente sem distrações.</p>
+        </div>
+
+        <div class="card">
+          <h3>📍 Localização Clara</h3>
+          <p>Facilite para o cliente do seu bairro encontrar rotas no mapa, horários e formas de chegar até você.</p>
+        </div>
+
+        <div class="card">
+          <h3>🤝 Postura Profissional</h3>
+          <p>Empresas com endereço oficial transmitem segurança imediata na hora de passar orçamentos de maior valor.</p>
+        </div>
+      </div>
+
+      <div class="transparency-box">
+        <strong>⚠️ Nota de responsabilidade K&M:</strong> Um site não garante vendas mágicas, clientes instantâneos ou primeiro lugar automático no Google. Os resultados comerciais dependem do seu mercado, qualidade do atendimento, preços praticados, divulgação e demanda real da sua região. Nós entregamos a estrutura profissional perfeita para você competir de igual para igual.
+      </div>
+    </section>
+
+    <!-- QUAL SITE COMBINA COM SEU NEGÓCIO (OS 7 FORMATOS) -->
+    <section id="modelos">
+      <div class="section-head">
+        <span>Formatos Sob Medida</span>
+        <h2>Qual site combina com o seu negócio?</h2>
+        <p>Nem toda empresa precisa da mesma estrutura. Trabalhamos com formatos adaptados para cada objetivo.</p>
+      </div>
+
+      <!-- 1. LANDING PAGE -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>🎯 Landing Page</h3>
+          <p class="format-desc">Uma página única criada para concentrar a atenção do visitante em uma oferta, serviço ou objetivo específico sem distrações.</p>
+          <div class="format-ideal"><strong>Ideal para:</strong> Serviços específicos, campanhas de anúncios, profissionais liberais e negócios que precisam de uma apresentação objetiva.</div>
+          <ul class="checklist-format">
+            <li><span>✓</span> Apresentação do serviço ou negócio</li>
+            <li><span>✓</span> Benefícios e diferenciais da oferta</li>
+            <li><span>✓</span> Fotos e trabalhos</li>
+            <li><span>✓</span> Depoimentos de clientes</li>
+            <li><span>✓</span> Perguntas frequentes (FAQ)</li>
+            <li><span>✓</span> Botões diretos de WhatsApp</li>
+            <li><span>✓</span> Formulário de contato</li>
+            <li><span>✓</span> 100% responsivo para celular</li>
+          </ul>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 697</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Landing%20Page%20(a%20partir%20de%20R$%20697)." target="_blank" class="btn btn-ghost">Quero uma Landing Page ↗</a>
+        </div>
+      </div>
+
+      <!-- 2. SITE INSTITUCIONAL -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>🏠 Site Institucional</h3>
+          <p class="format-desc">Um site para apresentar sua empresa de forma completa e organizada, reunindo as principais informações em diferentes páginas.</p>
+          <div class="format-ideal"><strong>Ideal para:</strong> Empresas, escritórios, clínicas, salões, oficinas, prestadores de serviço e comércios estabelecidos.</div>
+          <div style="background: rgba(0,0,0,0.3); padding: 8px 14px; border-radius: 6px; font-family: monospace; font-size: 0.88rem; color: #93c5fd; margin-bottom: 1rem;">
+            Estrutura: Início ➔ Sobre Nós ➔ Serviços ➔ Depoimentos ➔ Contato
+          </div>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 1.197</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20Institucional%20(a%20partir%20de%20R$%201.197)." target="_blank" class="btn btn-ghost">Quero um Site Institucional ↗</a>
+        </div>
+      </div>
+
+      <!-- 3. INSTITUCIONAL COMPLETO -->
+      <div class="format-card" style="border-color: rgba(59, 130, 246, 0.4); background: #0c1424;">
+        <div class="format-top">
+          <h3>🚀 Site Institucional Completo</h3>
+          <p class="format-desc">Para empresas que precisam de uma presença robusta, com estrutura ampla, galeria expandida e páginas personalizadas.</p>
+          <div class="format-ideal"><strong>Ideal para:</strong> Negócios consolidados que buscam máxima autoridade digital no mercado.</div>
+          <div style="background: rgba(0,0,0,0.3); padding: 8px 14px; border-radius: 6px; font-family: monospace; font-size: 0.88rem; color: #93c5fd; margin-bottom: 1rem;">
+            Estrutura: Início ➔ Sobre ➔ Serviços ➔ Portfólio ➔ Depoimentos ➔ Blog/Artigos ➔ Contato
+          </div>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 1.697</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20Institucional%20Completo%20(a%20partir%20de%20R$%201.697)." target="_blank" class="btn btn-wa">Quero um Site Completo ↗</a>
+        </div>
+      </div>
+
+      <!-- 4. RESTAURANTE E ALIMENTAÇÃO -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>🍔 Site para Restaurante & Alimentação</h3>
+          <p class="format-desc">Estrutura pensada para despertar apetite visual em restaurantes, padarias, lanchonetes, hamburguerias e cafeterias.</p>
+          <ul class="checklist-format">
+            <li><span>✓</span> Cardápio digital visual</li>
+            <li><span>✓</span> Fotos destacadas dos pratos</li>
+            <li><span>✓</span> Horários de funcionamento e fornadas</li>
+            <li><span>✓</span> Localização e rotas integradas</li>
+            <li><span>✓</span> Links diretos para pedidos no WhatsApp</li>
+            <li><span>✓</span> Canal de reservas quando aplicável</li>
+          </ul>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 1.297</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20de%20Restaurante/Padaria%20(a%20partir%20de%20R$%201.297)." target="_blank" class="btn btn-ghost">Quero um Site para Restaurante ↗</a>
+        </div>
+      </div>
+
+      <!-- 5. SERVIÇOS LOCAIS -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>💈 Site para Serviços Locais</h3>
+          <p class="format-desc">Desenvolvido sob medida para profissionais e empresas que atendem clientes presencialmente ou em uma região específica de São Paulo.</p>
+          <div class="format-ideal"><strong>Exemplos:</strong> Barbearias, salões de beleza, oficinas mecânicas, eletricistas, encanadores, marcenarias e prestadores de serviço.</div>
+          <ul class="checklist-format">
+            <li><span>✓</span> Apresentação clara de serviços</li>
+            <li><span>✓</span> Fotos dos trabalhos realizados</li>
+            <li><span>✓</span> Avaliações de clientes do bairro</li>
+            <li><span>✓</span> Mapa, horários e endereço</li>
+            <li><span>✓</span> Botão direto para WhatsApp</li>
+            <li><span>✓</span> Formulário rápido de orçamento</li>
+          </ul>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 997</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20de%20Servi%C3%A7o%20Local%20(a%20partir%20de%20R$%20997)." target="_blank" class="btn btn-ghost">Quero um Site para meu Negócio ↗</a>
+        </div>
+      </div>
+
+      <!-- 6. PORTFÓLIO PESSOAL -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>👤 Portfólio Pessoal</h3>
+          <p class="format-desc">Um site focado em valorizar o trabalho, a biografia e os projetos entregues por profissionais autônomos e criativos.</p>
+          <div class="format-ideal"><strong>Ideal para:</strong> Fotógrafos, arquitetos, designers, desenvolvedores, videomakers e consultores.</div>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 797</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Portf%C3%B3lio%20Pessoal%20(a%20partir%20de%20R$%20797)." target="_blank" class="btn btn-ghost">Quero meu Portfólio ↗</a>
+        </div>
+      </div>
+
+      <!-- 7. SITE COM AGENDAMENTO -->
+      <div class="format-card">
+        <div class="format-top">
+          <h3>📅 Site com Agendamento</h3>
+          <p class="format-desc">Para negócios que dependem de horários marcados. O cliente escolhe o serviço e o horário sem precisar de telefonemas demorados.</p>
+          <div class="format-ideal"><strong>Ideal para:</strong> Clínicas, estúdios, barbearias, consultórios e salões de estética.</div>
+          <div style="background: rgba(0,0,0,0.3); padding: 8px 14px; border-radius: 6px; font-family: monospace; font-size: 0.88rem; color: #93c5fd; margin-bottom: 1rem;">
+            Fluxo: Site ➔ Escolha do Serviço ➔ Data/Horário ➔ Confirmação
+          </div>
+        </div>
+        <div class="format-bottom">
+          <div class="format-price"><small>Investimento</small>A partir de R$ 1.697</div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Site%20com%20Agendamento%20(a%20partir%20de%20R$%201.697)." target="_blank" class="btn btn-ghost">Quero Site com Agendamento ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABELA COMPARATIVA RESUMIDA -->
+    <section>
+      <div class="section-head">
+        <span>Resumo de Valores</span>
+        <h2>Quanto custa criar um site?</h2>
+        <p>Valores-base claros e transparentes para você planejar seu investimento.</p>
+      </div>
+
+      <div class="table-box">
+        <table class="price-summary">
+          <thead>
+            <tr>
+              <th>Tipo de Site</th>
+              <th>Estrutura Principal</th>
+              <th>Valor Inicial</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🎯 <strong>Landing Page</strong></td>
+              <td>Página única de foco e conversão</td>
+              <td><strong>R$ 697</strong></td>
+            </tr>
+            <tr>
+              <td>👤 <strong>Portfólio Pessoal</strong></td>
+              <td>Apresentação de trabalhos e biografia</td>
+              <td><strong>R$ 797</strong></td>
+            </tr>
+            <tr>
+              <td>💈 <strong>Serviço Local</strong></td>
+              <td>Estrutura para comércios e profissionais locais</td>
+              <td><strong>R$ 997</strong></td>
+            </tr>
+            <tr>
+              <td>🏠 <strong>Site Institucional</strong></td>
+              <td>Multipáginas clássico para empresas</td>
+              <td><strong>R$ 1.197</strong></td>
+            </tr>
+            <tr>
+              <td>🍔 <strong>Site para Restaurante</strong></td>
+              <td>Cardápio visual + rotas + pedidos</td>
+              <td><strong>R$ 1.297</strong></td>
+            </tr>
+            <tr>
+              <td>🚀 <strong>Institucional Completo</strong></td>
+              <td>Estrutura expandida + blog/galeria</td>
+              <td><strong>R$ 1.697</strong></td>
+            </tr>
+            <tr>
+              <td>📅 <strong>Com Agendamento</strong></td>
+              <td>Estrutura integrada para marcação de horários</td>
+              <td><strong>R$ 1.697</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="transparency-box">
+        <strong>Por que os preços são "a partir de"?</strong><br>
+        Cada projeto é único. O orçamento exato é definido pelo número de páginas, quantidade de fotos/conteúdos, necessidade de agendamento automático, integrações técnicas e complexidade do design. Antes de iniciar qualquer trabalho, a K&M Boost apresenta uma proposta fechada: <strong>você sabe exatamente o que será entregue e quanto vai pagar, sem surpresas no meio do caminho.</strong>
+      </div>
+    </section>
+
+    <!-- O QUE PODEMOS COLOCAR NO SITE -->
+    <section>
+      <div class="section-head">
+        <span>Componentes</span>
+        <h2>O que podemos colocar no seu site?</h2>
+        <p>Recursos pensados para tornar a navegação do seu cliente agradável e funcional.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>🎨 Design Personalizado</h3>
+          <p>Estrutura visual pensada para combinar com a identidade da sua marca e o perfil do seu cliente.</p>
+        </div>
+        <div class="card">
+          <h3>📱 100% Responsivo</h3>
+          <p>Adaptação perfeita e fluida para celulares, tablets e telas de computador.</p>
+        </div>
+        <div class="card">
+          <h3>💬 WhatsApp Integrado</h3>
+          <p>Botões inteligentes que facilitam o primeiro contato sem exigir esforço do visitante.</p>
+        </div>
+        <div class="card">
+          <h3>📍 Mapa e Localização</h3>
+          <p>Endereço e rotas claras para ajudar o cliente a encontrar o seu estabelecimento no bairro.</p>
+        </div>
+        <div class="card">
+          <h3>📸 Galeria de Imagens</h3>
+          <p>Exposição de fotos reais de produtos, ambiente, pratos ou serviços executados.</p>
+        </div>
+        <div class="card">
+          <h3>🔎 Estrutura de SEO</h3>
+          <p>Código otimizado para que o Google consiga ler, indexar e entender o conteúdo da sua empresa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOMÍNIO, HOSPEDAGEM E GOOGLE -->
+    <section>
+      <div class="grid-2">
+        <div class="card">
+          <h3>🌐 E o domínio e a hospedagem?</h3>
+          <p style="margin-bottom:0.8rem;">Para um site funcionar na internet, existem serviços de infraestrutura:</p>
+          <p style="margin-bottom:0.4rem;">• <strong>Domínio:</strong> O endereço que as pessoas digitam (ex: <em>suaempresa.com.br</em>).</p>
+          <p style="margin-bottom:0.8rem;">• <strong>Hospedagem:</strong> O servidor que mantém o site aberto 24h por dia.</p>
+          <p style="font-size:0.88rem; color:#93c5fd; margin:0;">
+            A K&M Boost orienta você em todo o processo. Esses custos são contratados à parte no seu próprio nome para garantir que você seja o único dono do seu endereço na internet.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🔍 E a presença no Google?</h3>
+          <p style="margin-bottom:0.8rem;">
+            Seu site é construído seguindo as boas práticas técnicas de SEO. Porém, temos um compromisso com a verdade: <strong>criar um site não garante primeiro lugar automático no Google.</strong>
+          </p>
+          <p style="margin-bottom:1rem; font-size:0.92rem;">
+            O posicionamento depende de concorrência e autoridade. Para quem deseja um trabalho contínuo para disputar as primeiras posições, oferecemos estratégias dedicadas de SEO.
+          </p>
+          <a href="seo" style="color:var(--accent); font-weight:700; text-decoration:underline; font-size:0.92rem;">
+            Conhecer nossos serviços de SEO →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ DE 10 PERGUNTAS -->
+    <section>
+      <div class="section-head">
+        <span>Tire Suas Dúvidas</span>
+        <h2>Perguntas Frequentes sobre Criação de Sites</h2>
+        <p>Respostas diretas para você planejar seu site com segurança.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4>Preciso ter uma empresa grande para ter um site?</h4>
+          <p>Não. Atendemos desde profissionais autônomos e comércios locais de bairro até pequenas indústrias e empresas estabelecidas.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso colocar meu WhatsApp direto?</h4>
+          <p>Sim. Todos os projetos incluem botões estratégicos que direcionam o visitante direto para o seu WhatsApp com mensagem pronta.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso colocar links das minhas redes sociais?</h4>
+          <p>Sim. Integramos links para Instagram, Facebook, LinkedIn ou qualquer outro canal que sua empresa utilize.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>O site funciona bem em qualquer celular?</h4>
+          <p>Sim. Nossos projetos são desenvolvidos prioritariamente para celulares (mobile-first), garantindo carregamento rápido e sem quebras.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>O domínio está incluso no valor?</h4>
+          <p>O domínio é um serviço de registro separado (cerca de R$ 40/ano no Registro.br). Ajudamos você a registrar diretamente em seu nome.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>A hospedagem está inclusa?</h4>
+          <p>Depende da proposta contratada. Orientamos a melhor opção de hospedagem moderna (com certificado SSL gratuito incluso).</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso escolher o que vai aparecer no site?</h4>
+          <p>Sim. Toda a estrutura e textos são definidos em conjunto de acordo com as necessidades e objetivos reais da sua empresa.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso pedir alterações no projeto?</h4>
+          <p>Sim. Cada projeto possui uma etapa de revisão para ajustes finos dentro do escopo combinado antes da publicação oficial.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Vocês garantem que meu site vai trazer clientes?</h4>
+          <p>Não fazemos promessas mágicas. Nosso trabalho é entregar uma estrutura profissional, rápida e atrativa que facilite o contato de quem visita seu negócio.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Quanto tempo leva para o site ficar pronto?</h4>
+          <p>O prazo varia conforme o modelo (geralmente entre 3 a 10 dias úteis após o envio dos materiais). O prazo é sempre informado com clareza antes de começar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FECHAMENTO / CTA FINAL -->
+    <div style="background: #0d1424; border: 1px solid var(--accent); border-radius: 16px; padding: 3.5rem 2rem; text-align: center; margin: 4rem 0 2rem; box-shadow: 0 15px 40px rgba(59, 130, 246, 0.1);">
+      <h2 style="font-size: 2.1rem; font-weight: 800; margin-bottom: 0.8rem; color: #fff;">
+        🚀 Vamos criar o site da sua empresa?
+      </h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto 1.5rem; font-size: 1.05rem;">
+        Agora que você conhece as possibilidades, você não precisa saber de cabeça qual modelo contratar. Conte para a K&M Boost sobre o seu negócio e indicaremos a estrutura que faz mais sentido para o seu momento.
+      </p>
+      
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20qual%20site%20%C3%A9%20ideal%20para%20minha%20empresa." target="_blank" class="btn btn-wa" style="font-size: 1.05rem; padding: 1.1rem 2.4rem;">
+        Solicitar Orçamento no WhatsApp ↗
+      </a>
+    </div>
+
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.82rem; margin-bottom: 4rem;">
+      * Valores iniciais de referência. O orçamento final é fechado conforme a quantidade de páginas, complexidade e funcionalidades solicitadas.<br>
+      * Custos de domínio e infraestrutura são contratados à parte em nome do cliente, assegurando total propriedade do projeto.
+    </p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p style="margin-bottom: 0.4rem;"><strong>K&M Boost-Solution</strong> • Criação de Sites • Landing Pages • SEO • E-mail Profissional</p>
+      <p>© 2026 K&M Boost. Todos os direitos reservados. • <a href="privacidade" style="color: var(--text-muted); text-decoration: underline;">Política de Privacidade</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
