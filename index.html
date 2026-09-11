@@ -315,4 +315,666 @@
     .chip span { color: var(--whatsapp); margin-right: 6px; }
 
     /* PLANOS */
-    .pricing-card { display
+    .pricing-card { display: flex; flex-direction: column; justify-content: space-between; position: relative; }
+    .pricing-card.featured { border: 2px solid var(--accent); background: #101626; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12); }
+    .pricing-card .badge {
+      position: absolute; top: -12px; right: 20px; background: var(--accent);
+      font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase;
+    }
+    .price-tag { font-size: 2.3rem; font-weight: 800; margin: 1.2rem 0; }
+    .features { list-style: none; margin: 1.5rem 0 2rem; }
+    .features li { margin-bottom: 0.8rem; color: var(--text-muted); font-size: 0.92rem; }
+    .features li::before { content: "↗ "; color: var(--accent); font-weight: 800; }
+
+    /* CASES */
+    .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+    .portfolio-card {
+      background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px;
+      overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .mock-topbar {
+      background: #090e18; padding: 12px 18px; border-bottom: 1px solid var(--card-border);
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .mock-dots { display: flex; gap: 6px; }
+    .mock-dot { width: 9px; height: 9px; border-radius: 50%; }
+    .mock-status { font-size: 0.72rem; color: var(--whatsapp); font-weight: 700; }
+    .portfolio-body { padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; }
+    .metrics-tag {
+      background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2);
+      padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; color: #93c5fd; margin-bottom: 1rem; display: inline-block;
+    }
+
+    /* FAQ */
+    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+    .faq-item {
+      background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px;
+      padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .faq-item h4 { font-size: 1.1rem; margin-bottom: 0.6rem; color: #fff; }
+    .faq-item p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
+
+    /* CONTATO */
+    #contato { padding-bottom: 8rem; }
+    .contact-box {
+      background: var(--card-bg); border: 1px solid var(--card-border); padding: 2rem;
+      border-radius: 12px; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1.2rem; text-align: left;
+    }
+    .channel-item {
+      display: inline-flex; align-items: center; gap: 12px; color: var(--text-muted);
+      text-decoration: none; font-size: 0.95rem; transition: 0.2s; word-break: break-word;
+    }
+    .channel-item:hover { color: var(--text-white); transform: translateX(4px); }
+    .channel-item svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    /* WHATSAPP FLUTUANTE */
+    .wa-floating {
+      position: fixed; bottom: 25px; right: 25px; width: 58px; height: 58px;
+      background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4); z-index: 990; transition: transform 0.2s;
+    }
+    .wa-floating:hover { transform: scale(1.1); }
+    .wa-floating svg { width: 32px; height: 32px; fill: #fff; }
+
+    .mobile-bottom-bar {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0;
+      background: rgba(6, 8, 15, 0.95); backdrop-filter: blur(10px);
+      border-top: 1px solid var(--card-border); padding: 0.75rem 1rem;
+      z-index: 995; justify-content: space-between; align-items: center;
+    }
+    .mobile-bottom-bar span { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
+    .btn-mobile-action {
+      background: var(--whatsapp); color: #fff; font-weight: 800; font-size: 0.88rem;
+      padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--card-border); padding: 4rem 0 3rem;
+      background: #04060b; color: var(--text-muted); font-size: 0.9rem;
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-col h4 { color: #fff; margin-bottom: 1.2rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
+    .footer-col a { color: var(--text-muted); text-decoration: none; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid var(--card-border); font-size: 0.85rem; }
+    .privacy-link { color: var(--text-muted); text-decoration: underline; margin-left: 6px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav.nav-desktop { display: none; }
+      .btn-menu-burger { display: flex; }
+      .brand-logo-img { height: 36px; }
+
+      .hero-mockup-body { grid-template-columns: 1fr; padding: 1.6rem; }
+      .services-silo-grid, .portfolio-grid, .faq-grid, .footer-grid {
+        grid-template-columns: 1fr; gap: 1.5rem;
+      }
+
+      .wa-floating { display: none; }
+      .mobile-bottom-bar { display: flex; }
+      body { padding-bottom: 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- MENU DRAWER LATERAL -->
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-top">
+      <span style="font-weight: 700; color: var(--accent); font-size: 0.9rem;">MENU K&M BOOST</span>
+      <button class="drawer-close" id="drawerClose" aria-label="Fechar menu">✕</button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="#sobre"><span>↗</span> Quem Somos</a></li>
+      <li><a href="#servicos"><span>↗</span> Serviços</a></li>
+      <li><a href="#planos"><span>↗</span> Planos</a></li>
+      <li><a href="#portfolio"><span>↗</span> Cases</a></li>
+      <li><a href="#faq"><span>↗</span> Dúvidas</a></li>
+      <li><a href="seo"><span>↗</span> SEO e Google</a></li>
+      <li><a href="tipos-de-sites"><span>↗</span> Tipos de Sites</a></li>
+      <li><a href="por-que-ter-um-site"><span>↗</span> Indústrias Locais</a></li>
+      <li><a href="email-corporativo"><span>↗</span> E-mail Profissional</a></li>
+      <li><a href="#contato"><span>↗</span> Contato</a></li>
+      <li><a href="privacidade"><span>↗</span> Privacidade</a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 2rem;">
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Vim%20pelo%20menu%20do%20site%20kmbs.com.br." target="_blank" class="btn btn-wa" style="width: 100%; justify-content: center;">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="btn-menu-burger" id="menuToggle" aria-label="Abrir menu de navegação">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+        </button>
+
+        <!-- LOGO OFICIAL -->
+        <a href="https://kmbs.com.br/" class="brand-logo" aria-label="K&M Boost Página Inicial">
+          <img src="logo.png" alt="Criação de sites profissionais para empresas - K&M Boost" class="brand-logo-img" />
+        </a>
+      </div>
+
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#sobre">Quem Somos</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#portfolio">Cases</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (COM H1 EXATO DE SEO ON-PAGE) -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">Criação de Sites para Empresas em São Paulo - SP</div>
+        
+        <!-- H1 PRINCIPAL OTIMIZADO -->
+        <h1>Criação de Sites e Soluções Digitais para Empresas</h1>
+        
+        <p>Ajudamos pequenos negócios a terem uma presença digital profissional, transmitirem mais confiança e receberem mais contatos de clientes pela internet.</p>
+        
+        <div class="hero-ctas">
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20cria%C3%A7%C3%A3o%20de%20sites." class="btn btn-wa" target="_blank">
+            Solicitar Orçamento no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn-ghost">Conheça Nossos Serviços</a>
+        </div>
+
+        <!-- MOCKUP VISUAL -->
+        <div class="hero-mockup-wrapper">
+          <div class="hero-mockup-window">
+            <div class="hero-mockup-bar">
+              <div class="mockup-dots">
+                <span class="mockup-dot m-dot-red"></span>
+                <span class="mockup-dot m-dot-yellow"></span>
+                <span class="mockup-dot m-dot-green"></span>
+              </div>
+              <div class="mockup-address">
+                <span>🔒</span> https://kmbs.com.br/sua-empresa
+              </div>
+            </div>
+
+            <div class="hero-mockup-body">
+              <div class="mockup-preview-content">
+                <span style="color:var(--accent); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Performance & Conversão</span>
+                <h3>Sites rápidos que transformam visitantes em clientes</h3>
+                <p>Estrutura profissional planejada para o seu público local encontrar seus serviços no Google e chamar direto no WhatsApp.</p>
+                <a href="#portfolio" class="btn btn-ghost" style="padding: 0.65rem 1.4rem; font-size: 0.88rem;">
+                  Ver Modelos Ativos ↗
+                </a>
+              </div>
+
+              <div class="mockup-badges-wrap">
+                <div class="mockup-stat-card">
+                  <div class="stat-icon">⭐</div>
+                  <div>
+                    <strong>Posicionamento no Google</strong>
+                    <small>Atraia buscas orgânicas da sua região</small>
+                  </div>
+                </div>
+
+                <div class="mockup-stat-card">
+                  <div class="stat-icon">💬</div>
+                  <div>
+                    <strong>Foco no WhatsApp</strong>
+                    <small>Menos cliques até o primeiro contato</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROPOSTA DE VALOR & SEGMENTOS -->
+    <section id="sobre">
+      <div class="container">
+        <div class="section-head">
+          <span>Presença Estruturada</span>
+          <h2>Atendemos negócios locais de São Paulo que querem fortalecer sua presença digital e facilitar o contato com novos clientes.</h2>
+        </div>
+
+        <div class="grid-3" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
+          <div class="card" style="background:var(--card-bg); border:1px solid var(--card-border); border-radius:12px; padding:2rem;">
+            <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Credibilidade Imediata</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Seu cliente pesquisa no Google antes de comprar. Mostre um endereço profissional e conquiste a confiança no primeiro segundo.</p>
+          </div>
+          <div class="card" style="background:var(--card-bg); border:1px solid var(--card-border); border-radius:12px; padding:2rem;">
+            <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Foco no WhatsApp</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Toda a estrutura do site é montada para levar o visitante sem distrações até uma conversa real com você.</p>
+          </div>
+          <div class="card" style="background:var(--card-bg); border:1px solid var(--card-border); border-radius:12px; padding:2rem;">
+            <h3 style="font-size:1.25rem; font-weight:700; margin-bottom:0.5rem;">Atendimento Direto</h3>
+            <p style="color:var(--text-muted); font-size:0.95rem;">Sem intermediários ou jargões técnicos difíceis. Soluções acessíveis feitas para a realidade do comércio de bairro.</p>
+          </div>
+        </div>
+
+        <div class="chips">
+          <div class="chip"><span>↗</span> Barbearias & Salões</div>
+          <div class="chip"><span>↗</span> Padarias & Confeitarias</div>
+          <div class="chip"><span>↗</span> Restaurantes & Lanches</div>
+          <div class="chip"><span>↗</span> Pet Shops & Veterinárias</div>
+          <div class="chip"><span>↗</span> Indústrias & Oficinas de Bairro</div>
+          <div class="chip"><span>↗</span> Prestadores de Serviço</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVIÇOS (ESTRUTURAÇÃO EXATA DE H2 E H3 COM LINKS INTERNOS) ==================== -->
+    <section id="servicos">
+      <div class="container">
+        <div class="section-head">
+          <span>Soluções Digitais</span>
+          <h2>Serviços Especializados para sua Empresa</h2>
+          <p>Estrutura sob medida para cada etapa do crescimento do seu negócio na internet.</p>
+        </div>
+
+        <div class="services-silo-grid">
+          
+          <!-- SILO 1: CRIAÇÃO DE SITES PROFISSIONAIS -->
+          <article class="service-silo-card">
+            <div>
+              <h2><span>💻</span> Criação de Sites Profissionais</h2>
+              <p>
+                Desenvolvemos a vitrine completa da sua empresa para transmitir credibilidade, autoridade e apresentar seus serviços de forma estruturada.
+              </p>
+              
+              <div class="sub-pillars">
+                <h3>• Sites personalizados</h3>
+                <h3>• Sites responsivos (mobile-first)</h3>
+                <h3>• Sites para empresas e negócios locais</h3>
+              </div>
+            </div>
+
+            <div>
+              <a href="tipos-de-sites" class="service-link-arrow">
+                Conheça nossa criação de sites →
+              </a>
+            </div>
+          </article>
+
+          <!-- SILO 2: LANDING PAGES -->
+          <article class="service-silo-card">
+            <div>
+              <h2><span>🎯</span> Landing Pages</h2>
+              <p>
+                Páginas de alta conversão projetadas com foco único em transformar cliques em pedidos de orçamento diretos no WhatsApp da sua equipe.
+              </p>
+              
+              <div class="sub-pillars">
+                <h3>• Landing pages focadas em conversão</h3>
+                <h3>• Páginas para campanhas e anúncios pagos</h3>
+                <h3>• Páginas para divulgação de serviços</h3>
+              </div>
+            </div>
+
+            <div>
+              <a href="tipos-de-sites" class="service-link-arrow">
+                Conheça nossas landing pages →
+              </a>
+            </div>
+          </article>
+
+          <!-- SILO 3: SEO -->
+          <article class="service-silo-card">
+            <div>
+              <h2><span>🔍</span> SEO (Otimização para Buscadores)</h2>
+              <p>
+                Conjunto de estratégias para colocar seu site nos primeiros resultados orgânicos do Google, atraindo clientes qualificados sem pagar por clique.
+              </p>
+              
+              <div class="sub-pillars">
+                <h3>• Otimização para mecanismos de busca</h3>
+                <h3>• SEO On-Page e SEO Técnico</h3>
+                <h3>• SEO Local para bairros e regiões de SP</h3>
+              </div>
+            </div>
+
+            <div>
+              <a href="seo" class="service-link-arrow">
+                Conheça nossos serviços de SEO →
+              </a>
+            </div>
+          </article>
+
+          <!-- SILO 4: E-MAIL PROFISSIONAL -->
+          <article class="service-silo-card">
+            <div>
+              <h2><span>✉️</span> E-mail Profissional</h2>
+              <p>
+                Transmita máxima autoridade em propostas comerciais trocando e-mails comuns por contas corporativas oficiais com o domínio da sua marca.
+              </p>
+              
+              <div class="sub-pillars">
+                <h3>• E-mail com domínio da empresa (@suaempresa.com.br)</h3>
+                <h3>• Configuração profissional e padronização</h3>
+              </div>
+            </div>
+
+            <div>
+              <a href="email-corporativo" class="service-link-arrow">
+                Conheça nosso e-mail profissional →
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section id="planos">
+      <div class="container">
+        <div class="section-head">
+          <span>Tabela Transparente</span>
+          <h2>Planos Claros e Sem Pegadinhas</h2>
+          <p>Investimento acessível planejado sob medida para pequenos negócios.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;">
+          <!-- ESSENCIAL -->
+          <div class="card pricing-card">
+            <div>
+              <h3 style="font-size:1.3rem;">Essencial</h3>
+              <p style="color:var(--text-muted); font-size:0.9rem;">Comece com agilidade</p>
+              <div class="price-tag">R$ 797</div>
+              <ul class="features">
+                <li>Landing Page Focada em Conversão</li>
+                <li>Adaptada para todos os Celulares</li>
+                <li>Botão de WhatsApp Integrado</li>
+                <li>Localização e Horários do Comércio</li>
+                <li>Entrega Rápida e Direta</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Essencial%20(R$%20797)%20da%20K%26M%20Boost." class="btn btn-wa" style="justify-content:center;" target="_blank">
+              Escolher Essencial
+            </a>
+          </div>
+
+          <!-- PROFISSIONAL -->
+          <div class="card pricing-card featured">
+            <div class="badge">Mais Escolhido</div>
+            <div>
+              <h3 style="font-size:1.3rem;">Profissional</h3>
+              <p style="color:var(--text-muted); font-size:0.9rem;">Autoridade total no bairro</p>
+              <div class="price-tag">R$ 1.297</div>
+              <ul class="features">
+                <li>Site Institucional Multipáginas</li>
+                <li>Otimização para Busca (SEO Local)</li>
+                <li>Integração com Google Maps</li>
+                <li>Mensagens de WhatsApp Pré-definidas</li>
+                <li>Apresentação Completa de Serviços</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Profissional%20(R$%201.297)%20da%20K%26M%20Boost." class="btn btn-wa" style="justify-content:center;" target="_blank">
+              Escolher Profissional
+            </a>
+          </div>
+
+          <!-- COMPLETO -->
+          <div class="card pricing-card">
+            <div>
+              <h3 style="font-size:1.3rem;">Completo</h3>
+              <p style="color:var(--text-muted); font-size:0.9rem;">Solução digital definitiva</p>
+              <div class="price-tag">R$ 1.997</div>
+              <ul class="features">
+                <li>Estrutura de Site Avançada com Galeria</li>
+                <li>Configuração de E-mail Corporativo</li>
+                <li>Prioridade no Cronograma de Criação</li>
+                <li>Máxima Otimização de Performance</li>
+                <li>Suporte Dedicado Inicial</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Completo%20(R$%201.997)%20da%20K%26M%20Boost." class="btn btn-wa" style="justify-content:center;" target="_blank">
+              Escolher Completo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO & CASES -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span>Demonstrações Reais & Cases</span>
+          <h2>Modelos Projetados para Converter</h2>
+          <p>Navegue pelas demonstrações interativas criadas sob medida para o comércio da sua região.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- CASE 1 -->
+          <div class="portfolio-card">
+            <div class="mock-topbar">
+              <div class="mock-dots">
+                <span class="mock-dot" style="background:#ef4444;"></span>
+                <span class="mock-dot" style="background:#eab308;"></span>
+                <span class="mock-dot" style="background:#22c55e;"></span>
+              </div>
+              <span class="mock-status">● DEMONSTRAÇÃO ATIVA</span>
+            </div>
+            <div class="portfolio-body">
+              <div>
+                <span class="metrics-tag">⚡ Agendamento Fácil</span>
+                <h3 style="margin: 0.4rem 0 0.8rem;">Case Modelo: Barbearia Tradicional</h3>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem;">Tabela de cortes, visual escuro elegante, mapa do bairro e botão direto para agendamento no WhatsApp.</p>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:0.8rem;">
+                <a href="barbearia.html" target="_blank" class="btn btn-ghost" style="justify-content:center;">Ver Demonstração ao Vivo ↗</a>
+                <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostei%20do%20case%20de%20Barbearia." target="_blank" class="btn btn-wa" style="justify-content:center;">Quero um Projeto Assim</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 2 -->
+          <div class="portfolio-card">
+            <div class="mock-topbar">
+              <div class="mock-dots">
+                <span class="mock-dot" style="background:#ef4444;"></span>
+                <span class="mock-dot" style="background:#eab308;"></span>
+                <span class="mock-dot" style="background:#22c55e;"></span>
+              </div>
+              <span class="mock-status">● DEMONSTRAÇÃO ATIVA</span>
+            </div>
+            <div class="portfolio-body">
+              <div>
+                <span class="metrics-tag">🥐 Pedidos Diretos</span>
+                <h3 style="margin: 0.4rem 0 0.8rem;">Case Modelo: Padaria & Café</h3>
+                <p style="color:var(--text-muted); font-size:0.95rem; margin-bottom:1.5rem;">Cardápio visual limpo com destaque para fornadas frescas, encomendas de bolos e canal de delivery.</p>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:0.8rem;">
+                <a href="padaria.html" target="_blank" class="btn btn-ghost" style="justify-content:center;">Ver Demonstração ao Vivo ↗</a>
+                <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostei%20do%20case%20de%20Padaria." target="_blank" class="btn btn-wa" style="justify-content:center;">Quero um Projeto Assim</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span>Tire Suas Dúvidas</span>
+          <h2>Perguntas Frequentes</h2>
+          <p>Tudo o que você precisa saber antes de iniciar o projeto com a K&M Boost.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item" style="border-color: var(--accent); background: #0c1424;">
+            <div>
+              <h4 style="color: #fff;">O que é SEO e por que minha empresa precisa?</h4>
+              <p>SEO é o conjunto de técnicas usadas para posicionar seu site no Google de forma orgânica (sem pagar por clique). Ele faz sua empresa ser encontrada por quem já procura pelo seu serviço no seu bairro.</p>
+            </div>
+            <a href="seo" style="color: var(--accent); font-size: 0.88rem; font-weight: 700; text-decoration: underline; margin-top: 10px;">Ver guia detalhado de SEO ↗</a>
+          </div>
+
+          <div class="faq-item">
+            <div>
+              <h4>Qual tipo de site é o mais indicado para mim?</h4>
+              <p>Landing pages são perfeitas para campanhas rápidas e serviços pontuais. Sites institucionais são ideais para empresas que querem passar máxima credibilidade e apresentar vários serviços.</p>
+            </div>
+            <a href="tipos-de-sites" style="color: var(--accent); font-size: 0.88rem; font-weight: 700; text-decoration: underline; margin-top: 10px;">Ver todos os tipos de sites ↗</a>
+          </div>
+
+          <div class="faq-item">
+            <div>
+              <h4>Quanto tempo demora para meu site ficar pronto?</h4>
+              <p>Nosso processo é ágil e direto: entregamos seu site pronto para receber clientes entre 3 a 7 dias úteis após o envio das informações básicas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div>
+              <h4>O site vai funcionar rápido no celular dos meus clientes?</h4>
+              <p>Sim. 100% dos nossos projetos são construídos com foco prioritário em telas de celular (mobile-first), carregando em menos de 2 segundos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div>
+              <h4>Existe mensalidade obrigatória?</h4>
+              <p>Não. Os valores dos nossos planos são de pagamento único para desenvolvimento. Planos de manutenção e suporte mensal são totalmente opcionais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container" style="text-align:center; max-width:650px;">
+        <div class="section-head" style="margin-bottom:2rem;">
+          <span>Atendimento Direto</span>
+          <h2>Dê o próximo passo no seu negócio</h2>
+          <p>Solicite seu orçamento agora mesmo pelo canal mais rápido.</p>
+        </div>
+
+        <div class="contact-box">
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Vim%20pelo%20site%20kmbs.com.br." target="_blank" class="channel-item">
+            <svg viewBox="0 0 24 24" fill="var(--whatsapp)"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span><strong>WhatsApp:</strong> (11) 99184-7991</span>
+          </a>
+
+          <a href="mailto:km.boost.solution@kmbs.com.br?subject=Or%C3%A7amento%20de%20Site%20-%20K%26M%20Boost" class="channel-item">
+            <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <span><strong>E-mail Oficial:</strong> km.boost.solution@kmbs.com.br</span>
+          </a>
+
+          <a href="https://www.instagram.com/kmboost.solutions" target="_blank" class="channel-item">
+            <svg viewBox="0 0 24 24" fill="var(--instagram)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span><strong>Instagram:</strong> @kmboost.solutions</span>
+          </a>
+        </div>
+
+        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20site." class="btn btn-wa" target="_blank" style="font-size:1.05rem; padding:1.1rem 2.4rem;">
+          Iniciar Conversa no WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4 style="font-size:1.1rem;">K&M Boost</h4>
+          <p style="margin-top:0.5rem; line-height:1.6;">Criação de sites e soluções digitais para empresas crescerem na internet.</p>
+          <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--accent);">São Paulo - SP • Foco em Negócios Locais</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Serviços & Páginas</h4>
+          <ul>
+            <li><a href="#servicos">Criação de Sites</a></li>
+            <li><a href="#servicos">Landing Pages</a></li>
+            <li><a href="seo">Serviços de SEO</a></li>
+            <li><a href="email-corporativo">E-mail Profissional</a></li>
+            <li><a href="tipos-de-sites">Tipos de Sites</a></li>
+            <li><a href="por-que-ter-um-site">Indústrias Locais</a></li>
+            <li><a href="privacidade">Política de Privacidade</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Canais Oficiais</h4>
+          <ul>
+            <li><a href="https://wa.me/5511991847991" target="_blank">WhatsApp: (11) 99184-7991</a></li>
+            <li><a href="mailto:km.boost.solution@kmbs.com.br">km.boost.solution@kmbs.com.br</a></li>
+            <li><a href="https://www.instagram.com/kmboost.solutions" target="_blank">Instagram: @kmboost.solutions</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 K&M Boost. Todos os direitos reservados. • 
+          <a href="privacidade" class="privacy-link">Política de Privacidade</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLUTUANTE (DESKTOP) -->
+  <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Vim%20pelo%20site%20kmbs.com.br." class="wa-floating" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- BARRA DE CTA FIXO MOBILE -->
+  <div class="mobile-bottom-bar">
+    <span>K&M Boost • Online</span>
+    <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Vim%20pelo%20site%20kmbs.com.br." class="btn-mobile-action" target="_blank">
+      Chamar no WhatsApp ↗
+    </a>
+  </div>
+
+  <!-- SCRIPT CONTROLE MENU MOBILE -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const drawerClose = document.getElementById('drawerClose');
+    const drawerLinks = document.querySelectorAll('.drawer-links a');
+
+    function openMenu() {
+      mobileDrawer.classList.add('active');
+      drawerOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileDrawer.classList.remove('active');
+      drawerOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    menuToggle.addEventListener('click', openMenu);
+    drawerClose.addEventListener('click', closeMenu);
+    drawerOverlay.addEventListener('click', closeMenu);
+
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+  </script>
+
+</body>
+</html>
