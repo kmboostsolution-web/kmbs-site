@@ -29,3 +29,7 @@
     <priority>0.80</priority>
   </url>
 </urlset>
+<url>
+  <loc>https://kmbs.com.br/landing-pages.html</loc>
+  <priority>0.90</priority>
+</url>
