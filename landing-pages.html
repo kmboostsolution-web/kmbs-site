@@ -13,8 +13,8 @@
     gtag('config', 'G-5JDFH1P1BY');
   </script>
 
-  <title>Landing Pages de Alta Conversão para Empresas | K&M Boost</title>
-  <meta name="description" content="Páginas profissionais para apresentar serviços, gerar pedidos de orçamento ou receber tráfego de anúncios no Google e Instagram. A partir de R$ 497." />
+  <title>Landing Pages que Convertem | K&M Boost-Solution</title>
+  <meta name="description" content="Landing Pages personalizadas que apresentam sua empresa e facilitam o próximo passo do cliente. Conheça nossos modelos e planos a partir de R$ 497." />
   <link rel="canonical" href="https://kmbs.com.br/landing-pages.html" />
   <link rel="icon" type="image/png" href="favicon.png" />
   
@@ -26,6 +26,7 @@
     :root {
       --bg: #06080f;
       --card-bg: #0d121f;
+      --card-hover: #141c30;
       --border: #1b2438;
       --text-white: #ffffff;
       --text-muted: #94a3b8;
@@ -42,17 +43,17 @@
       background-color: var(--bg);
       color: var(--text-white);
       font-family: var(--font);
-      line-height: 1.75;
-      background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 50%);
+      line-height: 1.8;
+      background-image: radial-gradient(circle at 50% -5%, var(--accent-glow) 0%, transparent 45%);
       background-repeat: no-repeat;
     }
 
-    .container { width: 90%; max-width: 1040px; margin: 0 auto; }
+    .container { width: 90%; max-width: 960px; margin: 0 auto; }
 
     header {
       padding: 1.2rem 0;
       border-bottom: 1px solid var(--border);
-      background: rgba(6, 8, 15, 0.92);
+      background: rgba(6, 8, 15, 0.94);
       backdrop-filter: blur(12px);
       position: sticky;
       top: 0;
@@ -72,7 +73,7 @@
     .btn-voltar:hover { color: #fff; }
 
     /* HERO */
-    .hero-lp { padding: 4.5rem 0 3rem; text-align: center; }
+    .hero-lp { padding: 5rem 0 3.5rem; text-align: center; }
     .badge {
       display: inline-block;
       padding: 6px 16px;
@@ -88,30 +89,236 @@
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
       font-weight: 800;
-      line-height: 1.2;
-      margin-bottom: 1.2rem;
+      line-height: 1.15;
+      margin-bottom: 1.4rem;
       letter-spacing: -0.02em;
     }
 
     .lead-p {
-      font-size: 1.15rem;
-      color: var(--text-muted);
-      max-width: 760px;
-      margin: 0 auto 2.5rem;
+      font-size: 1.18rem;
+      color: #cbd5e1;
+      max-width: 780px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
     }
 
-    /* GRID DE PLANOS */
-    .plans-grid {
+    .highlight-pill {
+      font-weight: 800;
+      color: #fff;
+      font-size: 1.25rem;
+      margin: 1.5rem 0 2rem;
+      display: block;
+    }
+
+    /* SEÇÕES */
+    section {
+      padding: 4.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-head span {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .section-head h2 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-top: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .section-head p {
+      color: var(--text-muted);
+      margin-top: 0.8rem;
+      font-size: 1.05rem;
+    }
+
+    /* CARDS */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.8rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.2rem;
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+    /* FLUXO PASSO A PASSO */
+    .flow-banner {
+      background: #090e18;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      margin: 2.5rem 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #93c5fd;
+    }
+
+    /* AVISO DE TRANSPARÊNCIA */
+    .warning-box {
+      background: rgba(234, 179, 8, 0.05);
+      border-left: 3px solid #eab308;
+      padding: 1.2rem 1.6rem;
+      border-radius: 0 10px 10px 0;
+      margin: 3rem 0 1rem;
+      font-size: 0.95rem;
+      color: #fef08a;
+      line-height: 1.6;
+    }
+
+    .warning-box strong { color: #fff; }
+
+    /* MODELOS DETALHADOS */
+    .model-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 2.4rem;
+      margin-bottom: 2rem;
+      transition: all 0.2s ease;
+    }
+
+    .model-card h3 {
+      font-size: 1.45rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .model-tagline {
+      color: #93c5fd;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 1.4rem;
+      display: block;
+    }
+
+    .chips-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .chip-item {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+    }
+
+    .checklist-items {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem 1.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .checklist-items li {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .checklist-items li span { color: var(--whatsapp); font-weight: 800; }
+
+    .example-code {
+      background: #04060a;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      font-family: monospace;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      margin-top: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .example-code strong { color: var(--accent); display: block; margin-bottom: 4px; }
+
+    /* PROCESSO DE 7 PASSOS */
+    .timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .timeline-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.6rem;
+      position: relative;
+    }
+
+    .step-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-card h4 { font-size: 1.1rem; color: #fff; margin-bottom: 0.4rem; }
+    .timeline-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.5; margin: 0; }
+
+    /* PLANOS DE PREÇOS */
+    .pricing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.8rem;
-      margin: 3rem 0 2rem;
+      margin: 3rem 0;
       align-items: stretch;
     }
 
-    .plan-card {
+    .plan-box {
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 16px;
@@ -120,27 +327,27 @@
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-      transition: transform 0.2s ease, border-color 0.2s ease;
+      transition: all 0.2s ease;
     }
 
-    .plan-card:hover {
+    .plan-box:hover {
       transform: translateY(-4px);
       border-color: var(--accent);
     }
 
-    .plan-card.featured {
+    .plan-box.featured {
       border: 2px solid var(--accent);
       background: #0d1527;
       box-shadow: 0 15px 40px rgba(59, 130, 246, 0.15);
     }
 
-    .plan-badge-top {
+    .plan-badge {
       position: absolute;
       top: -13px;
       right: 20px;
       background: var(--accent);
       color: #fff;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 800;
       padding: 4px 14px;
       border-radius: 20px;
@@ -148,159 +355,104 @@
       letter-spacing: 0.05em;
     }
 
-    .plan-header h2 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.3rem;
-    }
-
-    .plan-sub {
-      color: #93c5fd;
-      font-size: 0.9rem;
-      font-weight: 600;
-      min-height: 24px;
-    }
-
-    .plan-price {
-      font-size: 2.4rem;
+    .plan-box h3 { font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 0.3rem; }
+    .plan-tag { color: #93c5fd; font-size: 0.88rem; font-weight: 600; min-height: 22px; }
+    
+    .plan-val {
+      font-size: 2.5rem;
       font-weight: 800;
       color: #fff;
       margin: 1.2rem 0;
     }
 
-    .plan-desc-text {
-      color: var(--text-muted);
-      font-size: 0.92rem;
-      line-height: 1.5;
-      margin-bottom: 1.5rem;
-      min-height: 48px;
-    }
-
-    .section-title-sm {
-      font-size: 0.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #fff;
-      margin-bottom: 0.6rem;
-    }
-
-    .chips-ideal {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 1.5rem;
-    }
-
-    .chip-item {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 3px 8px;
-      font-size: 0.78rem;
-      color: #cbd5e1;
-    }
-
-    .plan-checklist {
+    .plan-features-list {
       list-style: none;
-      margin-bottom: 1.8rem;
+      margin-bottom: 2rem;
       font-size: 0.9rem;
       color: #cbd5e1;
     }
 
-    .plan-checklist li {
+    .plan-features-list li {
       margin-bottom: 0.5rem;
       display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      line-height: 1.5;
-    }
-
-    .plan-checklist li span { color: var(--whatsapp); font-weight: 800; }
-
-    .example-box {
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px dashed var(--border);
-      border-radius: 8px;
-      padding: 0.8rem 1rem;
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-bottom: 1.8rem;
-    }
-
-    .example-box strong { color: #fff; display: block; margin-bottom: 3px; }
-
-    .btn-plan {
-      display: inline-flex;
       align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding: 0.9rem;
-      border-radius: 8px;
-      font-weight: 800;
-      font-size: 0.95rem;
-      text-decoration: none;
-      transition: all 0.2s ease;
+      gap: 8px;
     }
 
-    .btn-plan-green { background: var(--whatsapp); color: #fff; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3); }
-    .btn-plan-green:hover { background: var(--whatsapp-hover); transform: translateY(-2px); }
-    .btn-plan-ghost { background: rgba(255, 255, 255, 0.05); color: #fff; border: 1px solid var(--border); }
-    .btn-plan-ghost:hover { border-color: var(--accent); background: rgba(255, 255, 255, 0.08); }
+    .plan-features-list li::before { content: "✓"; color: var(--whatsapp); font-weight: 800; }
 
     /* GUIA DE ESCOLHA */
-    .decision-section {
-      background: #090e18;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 2.5rem;
-      margin: 4rem 0 2rem;
-    }
-
-    .decision-section h3 {
-      font-size: 1.4rem;
-      font-weight: 800;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
     .decision-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.2rem;
+      margin: 2.5rem 0;
     }
 
     .decision-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.4rem;
+      border-radius: 12px;
+      padding: 1.6rem;
       text-align: center;
     }
 
-    .decision-card span { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; }
-    .decision-card strong { font-size: 1.15rem; color: #fff; display: block; }
+    .decision-card span { font-size: 0.9rem; color: var(--text-muted); display: block; margin-bottom: 0.5rem; }
+    .decision-card strong { font-size: 1.15rem; color: #fff; display: block; margin-bottom: 0.2rem; }
     .decision-card small { color: var(--accent); font-weight: 700; font-size: 0.95rem; }
 
-    /* CUSTOM BOX */
-    .custom-box {
-      background: rgba(59, 130, 246, 0.05);
-      border: 1px solid rgba(59, 130, 246, 0.2);
-      border-radius: 14px;
-      padding: 2.5rem;
-      margin: 3rem 0;
-      text-align: center;
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
-    .custom-box h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.6rem; color: #fff; }
-    .custom-box p { color: var(--text-muted); max-width: 680px; margin: 0 auto 1.5rem; }
+    .faq-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem;
+    }
 
-    .disclaimer-text {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      text-align: center;
-      margin: 1.5rem 0 4rem;
+    .faq-card h4 { font-size: 1.1rem; color: #fff; margin-bottom: 0.6rem; }
+    .faq-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+    /* BOTÕES */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0.95rem 2rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-wa {
+      background: var(--whatsapp);
+      color: #fff;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-wa:hover {
+      background: var(--whatsapp-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid var(--border);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.08);
     }
 
     /* FOOTER */
@@ -314,14 +466,14 @@
     }
 
     @media (max-width: 868px) {
-      h1 { font-size: 2.1rem; }
-      .plans-grid, .decision-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2.2rem; }
+      .grid-2, .pricing-grid, .decision-grid, .faq-grid { grid-template-columns: 1fr; }
+      .checklist-items { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <div class="container header-inner">
       <a href="index.html">
@@ -332,202 +484,517 @@
   </header>
 
   <main class="container">
-    
-    <!-- HERO -->
+
+    <!-- 1. HERO -->
     <div class="hero-lp">
-      <span class="badge">Modelos & Pacotes</span>
-      <h1>Escolha a Landing Page ideal para sua empresa</h1>
+      <span class="badge">Objetivo & Conversão</span>
+      <h1>Landing Pages que apresentam sua empresa e facilitam o próximo passo</h1>
       <p class="lead-p">
-        Cada empresa possui um objetivo diferente. Criamos três opções estratégicas de Landing Pages: desde uma página profissional para apresentar um serviço até uma estrutura completa para campanhas de tráfego pago.
+        Uma página criada para um objetivo específico. Sua empresa pode ter um ótimo produto ou serviço, mas, se o visitante não entender rapidamente o que você oferece ou não souber como entrar em contato, uma oportunidade pode ser perdida.
       </p>
-    </div>
-
-    <!-- 3 PACOTES -->
-    <div class="plans-grid">
       
-      <!-- 1. START -->
-      <div class="plan-card">
-        <div>
-          <div class="plan-header">
-            <h2>🚀 START</h2>
-            <div class="plan-sub">Landing Page de Serviço</div>
-          </div>
-
-          <div class="plan-price">R$ 497</div>
-
-          <p class="plan-desc-text">
-            Para empresas que querem apresentar e divulgar um serviço específico de forma profissional na internet.
-          </p>
-
-          <div class="section-title-sm">Ideal para:</div>
-          <div class="chips-ideal">
-            <span class="chip-item">Prestadores de serviços</span>
-            <span class="chip-item">Autônomos</span>
-            <span class="chip-item">Agências</span>
-            <span class="chip-item">Empresas locais</span>
-          </div>
-
-          <div class="section-title-sm">O que inclui:</div>
-          <ul class="plan-checklist">
-            <li><span>✓</span> Página personalizada</li>
-            <li><span>✓</span> Apresentação do serviço</li>
-            <li><span>✓</span> Benefícios e diferenciais</li>
-            <li><span>✓</span> Seção "Como funciona"</li>
-            <li><span>✓</span> Depoimentos de clientes</li>
-            <li><span>✓</span> FAQ de dúvidas</li>
-            <li><span>✓</span> Botões de WhatsApp integrados</li>
-            <li><span>✓</span> Formulário de contato</li>
-            <li><span>✓</span> Design 100% responsivo</li>
-            <li><span>✓</span> SEO básico configurado</li>
-          </ul>
-
-          <div class="example-box">
-            <strong>Exemplo:</strong>
-            Página dedicada exclusivamente a um serviço (ex: "Criação de Sites"), mostrando benefícios e conduzindo direto ao WhatsApp.
-          </div>
-        </div>
-
-        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20START%20(R$%20497)%20para%20Landing%20Page." target="_blank" class="btn-plan btn-plan-ghost">
-          Quero o plano START
-        </a>
-      </div>
-
-      <!-- 2. PRO (MAIS ESCOLHIDO) -->
-      <div class="plan-card featured">
-        <span class="plan-badge-top">⭐ Mais Escolhido</span>
-        <div>
-          <div class="plan-header">
-            <h2>⭐ PRO</h2>
-            <div class="plan-sub">Orçamento ou Agendamento</div>
-          </div>
-
-          <div class="plan-price">R$ 697</div>
-
-          <p class="plan-desc-text">
-            Para empresas que precisam gerar contatos ativos, pedidos de orçamento detalhados ou agendamentos diários.
-          </p>
-
-          <div class="section-title-sm">Ideal para:</div>
-          <div class="chips-ideal">
-            <span class="chip-item">Barbearias e Salões</span>
-            <span class="chip-item">Clínicas e Estúdios</span>
-            <span class="chip-item">Construção e Pintores</span>
-            <span class="chip-item">Eletricistas</span>
-            <span class="chip-item">Móveis planejados</span>
-          </div>
-
-          <div class="section-title-sm">O que inclui:</div>
-          <ul class="plan-checklist">
-            <li><span>✓</span> <strong>Tudo do plano START</strong></li>
-            <li><span>✓</span> Estrutura focada em geração de contatos</li>
-            <li><span>✓</span> Formulário personalizado</li>
-            <li><span>✓</span> Campos específicos para o negócio</li>
-            <li><span>✓</span> Integração inteligente com WhatsApp</li>
-            <li><span>✓</span> Seção de serviços em destaque</li>
-            <li><span>✓</span> Chamadas para ação estratégicas</li>
-            <li><span>✓</span> Estrutura para orçamento ou agendamento</li>
-            <li><span>✓</span> Design responsivo e SEO básico</li>
-          </ul>
-
-          <div class="example-box">
-            <strong>Exemplo de Fluxo:</strong>
-            Orçamento: Nome ➔ WhatsApp ➔ Serviço ➔ Solicitar.<br>
-            Agendamento: Serviço ➔ Profissional ➔ Data/Hora ➔ Agendar.
-          </div>
-        </div>
-
-        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20PRO%20(R$%20697)%20para%20Landing%20Page." target="_blank" class="btn-plan btn-plan-green">
-          Quero o plano PRO
-        </a>
-      </div>
-
-      <!-- 3. CONVERSION -->
-      <div class="plan-card">
-        <div>
-          <div class="plan-header">
-            <h2>🔥 CONVERSION</h2>
-            <div class="plan-sub">Para Tráfego Pago & Anúncios</div>
-          </div>
-
-          <div class="plan-price">R$ 997</div>
-
-          <p class="plan-desc-text">
-            Para empresas que vão anunciar no Google Ads, Instagram Ads ou Facebook Ads e precisam de uma página preparada para receber esse tráfego.
-          </p>
-
-          <div class="section-title-sm">Ideal para:</div>
-          <div class="chips-ideal">
-            <span class="chip-item">Google Ads</span>
-            <span class="chip-item">Instagram Ads</span>
-            <span class="chip-item">Facebook Ads</span>
-            <span class="chip-item">Campanhas e Ofertas</span>
-          </div>
-
-          <div class="section-title-sm">O que inclui:</div>
-          <ul class="plan-checklist">
-            <li><span>✓</span> <strong>Tudo do plano PRO</strong></li>
-            <li><span>✓</span> Estrutura voltada para campanhas</li>
-            <li><span>✓</span> Headline estratégica com gancho</li>
-            <li><span>✓</span> Oferta principal em destaque</li>
-            <li><span>✓</span> Benefícios organizados estrategicamente</li>
-            <li><span>✓</span> Elementos de prova social</li>
-            <li><span>✓</span> CTAs de alta taxa de clique</li>
-            <li><span>✓</span> Integração com WhatsApp ou formulário</li>
-            <li><span>✓</span> Rastreamento básico de conversão</li>
-          </ul>
-
-          <div class="example-box">
-            <strong>Como funciona:</strong>
-            Anúncio ➔ Landing Page ➔ Ação.<br>
-            O visitante chega do anúncio e encontra exatamente a oferta prometida, sem distrações.
-          </div>
-        </div>
-
-        <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20plano%20CONVERSION%20(R$%20997)%20para%20Tr%C3%A1fego%20Pago." target="_blank" class="btn-plan btn-plan-ghost">
-          Quero o plano CONVERSION
-        </a>
-      </div>
-
-    </div>
-
-    <!-- GUIA DE DECISÃO RÁPIDA -->
-    <div class="decision-section">
-      <h3>🤔 Qual plano escolher?</h3>
-      <div class="decision-grid">
-        <div class="decision-card">
-          <span>Quero divulgar um serviço</span>
-          <strong>Plano START</strong>
-          <small>R$ 497</small>
-        </div>
-
-        <div class="decision-card" style="border-color: var(--accent);">
-          <span>Quero receber orçamentos ou agendamentos</span>
-          <strong>Plano PRO ⭐</strong>
-          <small>R$ 697</small>
-        </div>
-
-        <div class="decision-card">
-          <span>Vou investir em anúncios (Google / Meta)</span>
-          <strong>Plano CONVERSION</strong>
-          <small>R$ 997</small>
-        </div>
-      </div>
-    </div>
-
-    <!-- BOX DE PROJETOS PERSONALIZADOS -->
-    <div class="custom-box">
-      <h3>Precisa de algo diferente?</h3>
-      <p>
-        Cada projeto pode ter necessidades específicas. Se sua empresa precisar de integrações avançadas, ferramentas externas de agendamento ou uma arquitetura fora dos pacotes, avaliamos seu projeto e criamos uma solução sob medida.
+      <p style="color: #94a3b8; max-width: 720px; margin: 0 auto 1.5rem;">
+        Uma Landing Page é uma página desenvolvida com um objetivo específico, como: <strong>receber contatos, gerar pedidos de orçamento, conseguir agendamentos ou apresentar um serviço.</strong>
       </p>
-      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Preciso%20de%20uma%20Landing%20Page%20personalizada%20com%20estrutura%20espec%C3%ADfica." target="_blank" class="btn-plan btn-plan-green" style="display:inline-flex; width:auto; padding:0.9rem 2.2rem;">
-        Solicitar Orçamento Personalizado
+
+      <span class="highlight-pill">Seu objetivo define a página.</span>
+
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Quero%20criar%20uma%20Landing%20Page%20para%20o%20meu%20neg%C3%B3cio." target="_blank" class="btn btn-wa">
+        Quero criar minha Landing Page ↗
       </a>
     </div>
 
-    <p class="disclaimer-text">
-      * Os valores apresentados são preços-base iniciais e podem variar conforme a complexidade, funcionalidades extras e integrações do projeto.<br>
-      * Custos de domínio (Registro.br) e hospedagem são contratados à parte em nome do cliente, garantindo total posse dos seus canais.
+    <!-- 2. O QUE É UMA LANDING PAGE -->
+    <section>
+      <div class="section-head">
+        <span>Conceito Direto</span>
+        <h2>O que é uma Landing Page?</h2>
+        <p>
+          Uma Landing Page é uma página da internet criada para concentrar a atenção do visitante em uma oferta ou ação específica. Enquanto um site tradicional pode apresentar várias áreas da empresa, uma Landing Page possui um foco mais direcionado.
+        </p>
+      </div>
+
+      <div class="card" style="max-width: 800px; margin: 0 auto;">
+        <p style="margin-bottom: 0.8rem; color: #fff;"><strong>Como o visitante se comporta:</strong></p>
+        <p style="margin-bottom: 0.6rem;">1. Uma pessoa encontra seu anúncio ou sua empresa na internet.</p>
+        <p style="margin-bottom: 0.6rem;">2. Ela acessa a página.</p>
+        <p style="margin-bottom: 0.6rem;">3. Encontra uma explicação clara sobre o produto ou serviço.</p>
+        <p style="margin-bottom: 0.6rem;">4. Conhece os benefícios e diferenciais.</p>
+        <p style="margin-bottom: 0.6rem;">5. Tira suas principais dúvidas.</p>
+        <p style="margin-bottom: 0;">6. E encontra um caminho simples para entrar em contato, solicitar um orçamento ou realizar outra ação.</p>
+      </div>
+
+      <div class="flow-banner">
+        Apresentar ➔ Informar ➔ Gerar interesse ➔ Facilitar a ação
+      </div>
+    </section>
+
+    <!-- 3. POR QUE SUA EMPRESA PRECISA -->
+    <section>
+      <div class="section-head">
+        <span>Vantagens Reais</span>
+        <h2>Por que sua empresa pode precisar de uma Landing Page?</h2>
+        <p>Uma ferramenta prática para negócios que querem divulgar uma oferta ou facilitar uma ação específica.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>🎯 Mais foco</h3>
+          <p>Construída em torno de um objetivo principal, evitando excesso de informações que possam distrair o visitante.</p>
+        </div>
+
+        <div class="card">
+          <h3>💼 Mais profissionalismo</h3>
+          <p>Ajuda sua empresa a apresentar seus serviços de maneira mais organizada, moderna e profissional.</p>
+        </div>
+
+        <div class="card">
+          <h3>📲 Facilita o contato</h3>
+          <p>Inclusão de botões diretos de WhatsApp, formulários e caminhos simples que não tomam tempo do cliente.</p>
+        </div>
+
+        <div class="card">
+          <h3>💰 Facilita pedidos de orçamento</h3>
+          <p>Se você trabalha sob medida, a página direciona o cliente para preencher a solicitação sem enrolação.</p>
+        </div>
+
+        <div class="card">
+          <h3>📅 Facilita agendamentos</h3>
+          <p>Para quem trabalha com horário marcado, apresenta os serviços e direciona o cliente para o agendamento.</p>
+        </div>
+
+        <div class="card">
+          <h3>📢 Pronta para campanhas de anúncios</h3>
+          <p>Criada especificamente para receber visitantes vindos do Google Ads, Instagram Ads e Facebook Ads.</p>
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <strong>⚠️ Nota de transparência:</strong> Uma Landing Page não garante vendas, clientes ou posições milagrosas no Google. O resultado final também depende de fatores como a sua oferta, preço, público, concorrência, qualidade do tráfego e o atendimento da sua equipe.
+      </div>
+    </section>
+
+    <!-- 4. OS 4 TIPOS DE LANDING PAGES -->
+    <section>
+      <div class="section-head">
+        <span>Modelos Sob Medida</span>
+        <h2>Conheça os 4 tipos de Landing Pages da K&M</h2>
+        <p>Cada negócio possui uma necessidade diferente. Trabalhamos com quatro modelos principais.</p>
+      </div>
+
+      <!-- TIPO 1 -->
+      <div class="model-card">
+        <h3>🎯 1. Landing Page de Serviço</h3>
+        <span class="model-tagline">Apresente um serviço específico de forma clara e profissional.</span>
+        <p>Ideal para empresas que querem divulgar um determinado serviço e incentivar o visitante a entrar em contato.</p>
+        
+        <ul class="checklist-items">
+          <li><span>✓</span> Apresentação do serviço</li>
+          <li><span>✓</span> Benefícios e diferenciais</li>
+          <li><span>✓</span> Seção "Como funciona"</li>
+          <li><span>✓</span> Depoimentos de clientes</li>
+          <li><span>✓</span> Perguntas frequentes (FAQ)</li>
+          <li><span>✓</span> Botões de WhatsApp e Formulário</li>
+          <li><span>✓</span> Design 100% responsivo</li>
+          <li><span>✓</span> SEO básico configurado</li>
+        </ul>
+
+        <div class="example-code">
+          <strong>Exemplo de Aplicação:</strong>
+          Página dedicada exclusivamente a "Criação de Sites Profissionais", explicando o que é oferecido e facilitando o contato.
+        </div>
+      </div>
+
+      <!-- TIPO 2 -->
+      <div class="model-card">
+        <h3>💰 2. Landing Page de Orçamento</h3>
+        <span class="model-tagline">Transforme o interesse do visitante em uma solicitação de orçamento.</span>
+        <p>Indicada para empresas que precisam receber pedidos de orçamento detalhados de pessoas interessadas.</p>
+        
+        <ul class="checklist-items">
+          <li><span>✓</span> Apresentação da empresa</li>
+          <li><span>✓</span> Serviços oferecidos</li>
+          <li><span>✓</span> Diferenciais e benefícios</li>
+          <li><span>✓</span> Portfólio ou exemplos de trabalhos</li>
+          <li><span>✓</span> Formulário personalizado para o nicho</li>
+          <li><span>✓</span> Chamadas para ação estratégicas</li>
+        </ul>
+
+        <div class="example-code">
+          <strong>Fluxo do Formulário:</strong>
+          Nome ➔ WhatsApp ➔ Serviço desejado ➔ Descrição da necessidade ➔ Solicitar orçamento.
+        </div>
+      </div>
+
+      <!-- TIPO 3 -->
+      <div class="model-card">
+        <h3>📅 3. Landing Page de Agendamento</h3>
+        <span class="model-tagline">Facilite o caminho entre o interesse e o agendamento de horário.</span>
+        <p>Indicada para negócios que trabalham com horários marcados e atendimento com hora agendada.</p>
+        
+        <div class="chips-wrap">
+          <span class="chip-item">💈 Barbearias</span>
+          <span class="chip-item">💇 Salões</span>
+          <span class="chip-item">🩺 Clínicas</span>
+          <span class="chip-item">💆 Estética</span>
+          <span class="chip-item">🏋️ Studios</span>
+          <span class="chip-item">👤 Autônomos</span>
+        </div>
+
+        <ul class="checklist-items">
+          <li><span>✓</span> Catálogo visual de serviços</li>
+          <li><span>✓</span> Apresentação dos profissionais</li>
+          <li><span>✓</span> Preços e durações informadas</li>
+          <li><span>✓</span> Horários de funcionamento visíveis</li>
+          <li><span>✓</span> Integração com WhatsApp ou sistema próprio</li>
+        </ul>
+
+        <div class="example-code">
+          <strong>Ação Direta:</strong>
+          Botão "Agendar horário" direcionando o visitante direto para o WhatsApp do profissional ou plataforma de agendamento.
+        </div>
+      </div>
+
+      <!-- TIPO 4 -->
+      <div class="model-card">
+        <h3>📢 4. Landing Page para Tráfego Pago</h3>
+        <span class="model-tagline">Uma página preparada para receber visitantes de campanhas de anúncios.</span>
+        <p>Quando você anuncia no Google Ads, Instagram ou Facebook, direciona as pessoas para uma página específica alinhada com a oferta anunciada.</p>
+
+        <div class="example-code" style="margin-bottom: 1.2rem;">
+          <strong>O Funil do Anúncio:</strong>
+          Anúncio ("Criação de sites para empresas") ➔ Landing Page (Oferta + Benefícios + Provas) ➔ Ação (WhatsApp).
+        </div>
+
+        <ul class="checklist-items">
+          <li><span>✓</span> Headline estratégica com gancho forte</li>
+          <li><span>✓</span> Oferta principal em destaque</li>
+          <li><span>✓</span> Elementos de prova social</li>
+          <li><span>✓</span> Rastreamento básico (Pixel / Google Tag)</li>
+          <li><span>✓</span> Velocidade máxima para não perder o clique pago</li>
+        </ul>
+
+        <div class="warning-box" style="margin-top: 1.2rem;">
+          * A K&M Boost cria a página tecnicamente preparada para receber campanhas, mas não garantimos quantidade de vendas ou retorno financeiro dos anúncios.
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. O QUE SUA LANDING PAGE PODE TER -->
+    <section>
+      <div class="section-head">
+        <span>Recursos e Componentes</span>
+        <h2>O que sua Landing Page pode ter?</h2>
+        <p>Cada projeto é personalizado, mas alguns elementos fazem toda a diferença na conversão.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>🖥️ Design profissional</h3>
+          <p>Estrutura visual moderna e alinhada à identidade da sua marca para passar credibilidade.</p>
+        </div>
+        <div class="card">
+          <h3>📱 100% Responsiva</h3>
+          <p>Desenvolvida prioritariamente para celulares, tablets e computadores sem quebrar.</p>
+        </div>
+        <div class="card">
+          <h3>🎯 CTAs Estratégicos</h3>
+          <p>Botões que indicam o próximo passo: "Falar no WhatsApp", "Solicitar orçamento", "Agendar horário".</p>
+        </div>
+        <div class="card">
+          <h3>💬 Conexão com WhatsApp</h3>
+          <p>Botões inteligentes que já abrem o aplicativo com mensagem pré-formatada para o cliente.</p>
+        </div>
+        <div class="card">
+          <h3>📝 Formulários Diretos</h3>
+          <p>Coleta das informações necessárias para você qualificar o contato antes de responder.</p>
+        </div>
+        <div class="card">
+          <h3>⭐ Prova Social</h3>
+          <p>Espaço para depoimentos e avaliações de clientes reais que aprovam seu trabalho.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. COMO FUNCIONA A CRIAÇÃO (7 PASSOS) -->
+    <section>
+      <div class="section-head">
+        <span>Passo a Passo</span>
+        <h2>Como funciona a criação da sua página?</h2>
+        <p>Um processo direto, sem enrolação e transparente do início à entrega.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-card">
+          <div class="step-num">01</div>
+          <h4>Você nos conta sobre seu negócio</h4>
+          <p>Entendemos seu serviço, público e o objetivo principal que a página deve atingir.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="step-num">02</div>
+          <h4>Definimos a melhor estrutura</h4>
+          <p>Identificamos qual dos modelos (Serviço, Orçamento, Agendamento ou Tráfego) faz mais sentido.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="step-num">03</div>
+          <h4>Organizamos o conteúdo</h4>
+          <p>Estruturamos textos e seções para o visitante entender a oferta sem esforço.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="step-num">04</div>
+          <h4>Desenvolvemos a Landing Page</h4>
+          <p>Construção do design, código limpo e layout adaptado para telas de celular.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="step-num">05</div>
+          <h4>Configuramos os recursos</h4>
+          <p>Integração de botões de WhatsApp, formulários e links oficiais de contato.</p>
+        </div>
+
+        <div class="timeline-card">
+          <div class="step-num">06</div>
+          <h4>Testamos tudo</h4>
+          <p>Checamos velocidade, carregamento no celular e funcionamento de todos os botões.</p>
+        </div>
+
+        <div class="timeline-card" style="border-color: var(--accent);">
+          <div class="step-num" style="color: var(--whatsapp);">07</div>
+          <h4>Entregamos seu projeto</h4>
+          <p>Com sua aprovação final, a Landing Page fica pronta para receber visitantes e gerar contatos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. O QUE PRECISAMOS / DOMÍNIO E HOSPEDAGEM -->
+    <section>
+      <div class="grid-2">
+        <div class="card">
+          <h3>📦 O que precisamos do cliente?</h3>
+          <p style="margin-bottom: 0.8rem;">Para personalizar sua página, solicitamos materiais básicos:</p>
+          <ul style="margin-left: 1.2rem; color: var(--text-muted); font-size: 0.92rem; line-height: 1.7;">
+            <li>Logotipo da empresa</li>
+            <li>Descrição dos serviços ou produtos</li>
+            <li>Preços (quando aplicável)</li>
+            <li>Fotos do espaço ou dos trabalhos</li>
+            <li>Contatos (WhatsApp, e-mail, redes sociais e endereço)</li>
+          </ul>
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: #93c5fd;">
+            <strong>E se eu não tiver tudo isso?</strong> Sem problemas! Nós orientamos você sobre o que é essencial e organizamos o material disponível.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🌐 Domínio e Hospedagem inclusos?</h3>
+          <p>A criação da Landing Page e os custos de infraestrutura são serviços diferentes:</p>
+          <p style="margin-bottom: 0.6rem;">• <strong>Domínio:</strong> É o seu endereço na internet (ex: <em>suaempresa.com.br</em> - cerca de R$ 40/ano no Registro.br).</p>
+          <p style="margin-bottom: 0.8rem;">• <strong>Hospedagem:</strong> Onde os arquivos ficam guardados para o site abrir 24h por dia.</p>
+          <p style="font-size: 0.88rem; color: #93c5fd;">
+            💡 <strong>Transparência K&M:</strong> Esses custos são contratados à parte diretamente no seu nome. Assim você é o único dono do seu endereço e sabe exatamente pelo que está pagando, sem surpresas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. QUANTO CUSTA UMA LANDING PAGE (TABELA DE PREÇOS) -->
+    <section id="planos">
+      <div class="section-head">
+        <span>Investimento Transparente</span>
+        <h2>Quanto custa uma Landing Page?</h2>
+        <p>Três opções estratégicas planejadas para diferentes momentos do seu comércio.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- START -->
+        <div class="plan-box">
+          <div>
+            <h3>🚀 START</h3>
+            <span class="plan-tag">Landing Page de Serviço</span>
+            <div class="plan-val">R$ 497</div>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+              Para apresentar um serviço específico e facilitar o contato direto.
+            </p>
+            <ul class="plan-features-list">
+              <li>Página personalizada</li>
+              <li>Apresentação do serviço</li>
+              <li>Benefícios e diferenciais</li>
+              <li>Seção "Como funciona"</li>
+              <li>Depoimentos autorizados</li>
+              <li>FAQ de dúvidas</li>
+              <li>Botão de WhatsApp</li>
+              <li>Formulário de contato</li>
+              <li>100% Responsiva</li>
+              <li>SEO básico</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Quero%20o%20plano%20START%20(R$%20497)%20para%20Landing%20Page." target="_blank" class="btn btn-ghost" style="width: 100%;">
+            Quero o START
+          </a>
+        </div>
+
+        <!-- PRO (DESTAQUE) -->
+        <div class="plan-box featured">
+          <span class="plan-badge">⭐ Mais Escolhido</span>
+          <div>
+            <h3>⭐ PRO</h3>
+            <span class="plan-tag">Orçamento ou Agendamento</span>
+            <div class="plan-val">R$ 697</div>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+              Para empresas que precisam gerar pedidos de orçamento ou agendamentos.
+            </p>
+            <ul class="plan-features-list">
+              <li><strong>Tudo do plano START</strong></li>
+              <li>Estrutura focada em geração de contatos</li>
+              <li>Formulário personalizado com campos específicos</li>
+              <li>Integração inteligente com WhatsApp</li>
+              <li>Seção de serviços em destaque</li>
+              <li>CTAs estratégicos</li>
+              <li>Estrutura para orçamento ou agendamento</li>
+              <li>Responsiva e rápida</li>
+              <li>SEO básico configurado</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Quero%20o%20plano%20PRO%20(R$%20697)%20para%20Landing%20Page." target="_blank" class="btn btn-wa" style="width: 100%;">
+            Quero o PRO
+          </a>
+        </div>
+
+        <!-- CONVERSION -->
+        <div class="plan-box">
+          <div>
+            <h3>🔥 CONVERSION</h3>
+            <span class="plan-tag">Para Tráfego Pago & Anúncios</span>
+            <div class="plan-val">R$ 997</div>
+            <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 1.5rem;">
+              Para empresas que querem direcionar visitantes de campanhas de anúncios.
+            </p>
+            <ul class="plan-features-list">
+              <li><strong>Tudo do plano PRO</strong></li>
+              <li>Estrutura focada em conversão de cliques</li>
+              <li>Headline estratégica com gancho forte</li>
+              <li>Oferta principal em destaque</li>
+              <li>Benefícios organizados estrategicamente</li>
+              <li>Elementos de prova social</li>
+              <li>CTAs de alta taxa de clique</li>
+              <li>Estrutura preparada para campanhas</li>
+              <li>WhatsApp ou formulário</li>
+              <li>Rastreamento básico de conversão</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Quero%20o%20plano%20CONVERSION%20(R$%20997)%20para%20Tr%C3%A1fego%20Pago." target="_blank" class="btn btn-ghost" style="width: 100%;">
+            Quero o CONVERSION
+          </a>
+        </div>
+      </div>
+
+      <!-- GUIA RÁPIDO DE ESCOLHA -->
+      <div style="margin-top: 3.5rem;">
+        <h3 style="font-size: 1.3rem; text-align: center; color: #fff; margin-bottom: 1.5rem;">
+          Qual é o melhor plano para minha empresa?
+        </h3>
+        <div class="decision-grid">
+          <div class="decision-card">
+            <span>Quero divulgar um serviço.</span>
+            <strong>START</strong>
+            <small>R$ 497</small>
+          </div>
+          <div class="decision-card" style="border-color: var(--accent);">
+            <span>Quero receber orçamentos ou agendamentos.</span>
+            <strong>PRO ⭐</strong>
+            <small>R$ 697</small>
+          </div>
+          <div class="decision-card">
+            <span>Quero criar página para anúncios pagos.</span>
+            <strong>CONVERSION</strong>
+            <small>R$ 997</small>
+          </div>
+        </div>
+        <p style="text-align: center; color: var(--text-muted); font-size: 0.95rem;">
+          <strong>Ainda não sabe qual escolher?</strong> Fale com a K&M. Entenderemos seu objetivo e indicaremos a opção mais adequada ao projeto.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9. PERGUNTAS FREQUENTES (FAQ) -->
+    <section>
+      <div class="section-head">
+        <span>Tire Suas Dúvidas</span>
+        <h2>Perguntas Frequentes sobre Landing Pages</h2>
+        <p>Respostas claras e transparentes para você contratar com total segurança.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4>Landing Page é a mesma coisa que um site?</h4>
+          <p>Não necessariamente. Um site pode possuir várias páginas e apresentar diversas informações sobre uma empresa. Uma Landing Page normalmente possui um objetivo mais específico, concentrando o visitante em uma oferta ou ação.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Preciso ter anúncios para usar uma Landing Page?</h4>
+          <p>Não. Uma Landing Page pode ser divulgada através de redes sociais, Google orgânico, links, QR Codes, mensagens e outras estratégias. Ela também pode ser criada especificamente para campanhas de tráfego pago.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>A Landing Page garante vendas?</h4>
+          <p>Não. Nenhuma página pode garantir vendas por si só. A Landing Page é uma ferramenta que ajuda a apresentar uma oferta e facilitar uma ação. Os resultados dependem de produto, preço, público, tráfego, concorrência e atendimento.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Vocês fazem a gestão do tráfego pago?</h4>
+          <p>A Landing Page para Tráfego Pago é preparada para receber visitantes de campanhas. A gestão de anúncios (tráfego pago) não está incluída nesse plano, a menos que seja contratada separadamente.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Vocês garantem primeiro lugar no Google?</h4>
+          <p>Não. Aplicamos as boas práticas de SEO dentro do serviço contratado, mas não é possível garantir uma posição específica no Google.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso pedir alterações no projeto?</h4>
+          <p>Sim. O projeto possui uma etapa de revisão para que sejam realizados os ajustes previstos no escopo contratado.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso colocar meu WhatsApp direto?</h4>
+          <p>Sim. Configuramos os botões para direcionar o visitante ao WhatsApp informado pelo cliente com mensagem pré-formatada.</p>
+        </div>
+
+        <div class="faq-card">
+          <h4>Posso ter um formulário na página?</h4>
+          <p>Sim. O formulário pode ser configurado de acordo com o objetivo da Landing Page e as informações que sua empresa precisa receber.</p>
+        </div>
+
+        <div class="faq-card" style="grid-column: 1 / -1;">
+          <h4>A página funciona bem no celular?</h4>
+          <p>Sim. Todas as Landing Pages da K&M Boost são desenvolvidas com foco prioritário em responsividade (mobile-first), carregando rápido e sem quebrar em qualquer celular.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FECHAMENTO & CTA FINAL -->
+    <div style="background: #0d1424; border: 1px solid var(--accent); border-radius: 16px; padding: 3.5rem 2rem; text-align: center; margin: 4rem 0 2rem; box-shadow: 0 15px 40px rgba(59, 130, 246, 0.1);">
+      <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.8rem; color: #fff;">
+        Sua empresa já tem uma oferta. Agora falta apresentá-la da maneira certa.
+      </h2>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto 1.5rem; font-size: 1.05rem;">
+        Uma Landing Page é o espaço onde seu potencial cliente entende sua oferta ➔ conhece seus diferenciais ➔ tira suas dúvidas ➔ encontra uma ação clara.
+      </p>
+      
+      <p style="font-size: 1.15rem; color: #93c5fd; font-weight: 800; margin-bottom: 1.8rem;">
+        Vamos criar a sua? Conte para nós o que sua empresa oferece e qual resultado você busca.
+      </p>
+
+      <a href="https://wa.me/5511991847991?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20uma%20Landing%20Page." target="_blank" class="btn btn-wa" style="font-size: 1.05rem; padding: 1.1rem 2.4rem;">
+        Solicitar Orçamento no WhatsApp ↗
+      </a>
+    </div>
+
+    <p style="text-align: center; color: var(--text-muted); font-size: 0.82rem; margin-bottom: 4rem;">
+      * Valores iniciais. O preço final pode variar conforme a complexidade do projeto, funcionalidades, integrações, quantidade de conteúdo e necessidades específicas do cliente.<br>
+      * Custos de domínio e hospedagem não estão inclusos e são contratados em nome do cliente para garantir posse total da estrutura.
     </p>
 
   </main>
@@ -535,7 +1002,8 @@
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>© 2026 K&M Boost Solution. Todos os direitos reservados. • <a href="privacidade.html" style="color: var(--text-muted); text-decoration: underline;">Política de Privacidade</a></p>
+      <p style="margin-bottom: 0.4rem;"><strong>K&M Boost-Solution</strong> • Criação de Sites • Landing Pages • SEO • E-mail Profissional</p>
+      <p>© 2026 K&M Boost. Todos os direitos reservados. • <a href="privacidade.html" style="color: var(--text-muted); text-decoration: underline;">Política de Privacidade</a></p>
     </div>
   </footer>
 
