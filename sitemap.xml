@@ -5,6 +5,10 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://kmbs.com.br/landing-pages.html</loc>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://kmbs.com.br/seo.html</loc>
     <priority>0.90</priority>
   </url>
@@ -29,7 +33,3 @@
     <priority>0.80</priority>
   </url>
 </urlset>
-<url>
-  <loc>https://kmbs.com.br/landing-pages.html</loc>
-  <priority>0.90</priority>
-</url>
