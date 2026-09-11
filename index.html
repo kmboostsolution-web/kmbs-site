@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- ==================== GOOGLE TAG (ANALYTICS 4) ==================== -->
+  <!-- GOOGLE TAG (ANALYTICS 4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JDFH1P1BY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,10 +13,10 @@
     gtag('config', 'G-5JDFH1P1BY');
   </script>
 
-  <!-- ==================== VERIFICAÇÃO GOOGLE SEARCH CONSOLE ==================== -->
+  <!-- VERIFICAÇÃO GOOGLE SEARCH CONSOLE -->
   <meta name="google-site-verification" content="RGQH5ocUnzPdVhKtZCW9xWtketUJfOwrI7NQW5X5yMY" />
 
-  <!-- ==================== SEO ON-PAGE ==================== -->
+  <!-- SEO ON-PAGE -->
   <title>K&M Boost | Criação de Sites, Landing Pages e SEO em SP</title>
   <meta name="title" content="K&M Boost | Criação de Sites, Landing Pages e SEO em SP" />
   <meta name="description" content="A K&M Boost cria sites profissionais, landing pages de alta conversão, soluções de SEO e e-mail profissional para empresas em São Paulo. Peça seu orçamento!" />
@@ -25,11 +25,10 @@
   <meta name="author" content="K&M Boost" />
   <link rel="canonical" href="https://kmbs.com.br/" />
   
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="favicon.png" />
 
-  <!-- Open Graph / WhatsApp Preview -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kmbs.com.br/" />
   <meta property="og:title" content="K&M Boost | Criação de Sites, Landing Pages e SEO" />
@@ -45,12 +44,10 @@
   <meta name="twitter:description" content="Sites profissionais, landing pages e SEO com foco em conversão e resultados reais." />
   <meta name="twitter:image" content="https://kmbs.com.br/logo.png" />
 
-  <!-- Tipografia Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Schema Markup JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,7 +61,7 @@
         "image": "https://kmbs.com.br/logo.png",
         "telephone": "+55-11-99184-7991",
         "email": "km.boost.solution@kmbs.com.br",
-        "priceRange": "R$ 797 - R$ 1.997",
+        "priceRange": "R$ 497 - R$ 1.997",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "São Paulo",
@@ -123,7 +120,6 @@
 
     .container { width: 90%; max-width: 1140px; margin: 0 auto; }
 
-    /* HEADER */
     header {
       position: sticky; top: 0; z-index: 100;
       background: rgba(6, 8, 15, 0.94);
@@ -147,7 +143,6 @@
     }
     .btn-menu-burger svg { width: 28px; height: 28px; fill: #fff; }
 
-    /* DRAWER LATERAL (MOBILE) */
     .drawer-overlay {
       position: fixed; inset: 0; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(4px);
       z-index: 998; opacity: 0; pointer-events: none; transition: opacity 0.3s;
@@ -171,7 +166,6 @@
     .drawer-links a { color: var(--text-white); text-decoration: none; font-size: 1.02rem; font-weight: 600; display: flex; align-items: center; gap: 10px; }
     .drawer-links a span { color: var(--accent); }
 
-    /* BOTÕES */
     .btn {
       display: inline-flex; align-items: center; gap: 8px; padding: 0.85rem 1.8rem;
       border-radius: 8px; font-weight: 700; font-size: 0.95rem; text-decoration: none;
@@ -182,7 +176,6 @@
     .btn-ghost { background: rgba(255, 255, 255, 0.04); color: #fff; border: 1px solid var(--card-border); }
     .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); border-color: var(--accent); }
 
-    /* HERO */
     .hero { padding: 6.5rem 0 5rem; text-align: center; }
     .hero-badge {
       display: inline-block; padding: 6px 16px; background: rgba(59, 130, 246, 0.08);
@@ -193,7 +186,6 @@
     .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 680px; margin: 0 auto 2.5rem; }
     .hero-ctas { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; margin-bottom: 3.5rem; }
 
-    /* VITRINE VISUAL */
     .hero-mockup-wrapper { position: relative; max-width: 900px; margin: 0 auto; }
     .hero-mockup-window {
       background: #0d121f; border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 16px;
@@ -230,91 +222,31 @@
     .mockup-stat-card strong { display: block; font-size: 0.95rem; color: #fff; }
     .mockup-stat-card small { color: var(--text-muted); font-size: 0.82rem; }
 
-    /* SEÇÕES */
     section { padding: 5.5rem 0; border-top: 1px solid var(--card-border); }
     .section-head { text-align: center; max-width: 700px; margin: 0 auto 3.5rem; }
     .section-head span { color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; }
     .section-head h2 { font-size: 2.1rem; font-weight: 800; margin-top: 0.5rem; letter-spacing: -0.02em; }
     .section-head p { color: var(--text-muted); margin-top: 0.8rem; }
 
-    /* GRIDS DE SERVIÇOS REESTRUTURADA PARA SEO (H2/H3) */
-    .services-silo-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-
+    .services-silo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
     .service-silo-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 14px;
-      padding: 2.2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.2s ease;
+      background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px;
+      padding: 2.2rem; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;
     }
-
-    .service-silo-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-3px);
-      background: var(--card-hover);
-    }
-
-    .service-silo-card h2 {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #fff;
-      margin-bottom: 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .service-silo-card p {
-      color: var(--text-muted);
-      font-size: 0.98rem;
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
-    }
-
+    .service-silo-card:hover { border-color: var(--accent); transform: translateY(-3px); background: var(--card-hover); }
+    .service-silo-card h2 { font-size: 1.5rem; font-weight: 800; color: #fff; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; }
+    .service-silo-card p { color: var(--text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 1.5rem; }
     .sub-pillars {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      margin-bottom: 1.8rem;
-      padding-left: 0.5rem;
-      border-left: 2px solid rgba(59, 130, 246, 0.3);
+      display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.8rem; padding-left: 0.5rem; border-left: 2px solid rgba(59, 130, 246, 0.3);
     }
-
-    .sub-pillars h3 {
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: #e2e8f0;
-      margin: 0;
-    }
-
-    .service-link-arrow {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 700;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      transition: gap 0.2s ease;
-    }
-
-    .service-link-arrow:hover {
-      gap: 10px;
-      color: #93c5fd;
-    }
+    .sub-pillars h3 { font-size: 0.92rem; font-weight: 600; color: #e2e8f0; margin: 0; }
+    .service-link-arrow { color: var(--accent); text-decoration: none; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+    .service-link-arrow:hover { gap: 10px; color: #93c5fd; }
 
     .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 2.5rem; }
     .chip { background: var(--card-bg); border: 1px solid var(--card-border); padding: 10px 18px; border-radius: 8px; font-size: 0.92rem; font-weight: 600; }
     .chip span { color: var(--whatsapp); margin-right: 6px; }
 
-    /* PLANOS */
     .pricing-card { display: flex; flex-direction: column; justify-content: space-between; position: relative; }
     .pricing-card.featured { border: 2px solid var(--accent); background: #101626; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.12); }
     .pricing-card .badge {
@@ -326,7 +258,6 @@
     .features li { margin-bottom: 0.8rem; color: var(--text-muted); font-size: 0.92rem; }
     .features li::before { content: "↗ "; color: var(--accent); font-weight: 800; }
 
-    /* CASES */
     .portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
     .portfolio-card {
       background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px;
@@ -345,7 +276,6 @@
       padding: 6px 12px; border-radius: 6px; font-size: 0.85rem; color: #93c5fd; margin-bottom: 1rem; display: inline-block;
     }
 
-    /* FAQ */
     .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .faq-item {
       background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 10px;
@@ -354,7 +284,6 @@
     .faq-item h4 { font-size: 1.1rem; margin-bottom: 0.6rem; color: #fff; }
     .faq-item p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
-    /* CONTATO */
     #contato { padding-bottom: 8rem; }
     .contact-box {
       background: var(--card-bg); border: 1px solid var(--card-border); padding: 2rem;
@@ -367,7 +296,6 @@
     .channel-item:hover { color: var(--text-white); transform: translateX(4px); }
     .channel-item svg { width: 22px; height: 22px; flex-shrink: 0; }
 
-    /* WHATSAPP FLUTUANTE */
     .wa-floating {
       position: fixed; bottom: 25px; right: 25px; width: 58px; height: 58px;
       background: var(--whatsapp); border-radius: 50%; display: flex; align-items: center; justify-content: center;
@@ -388,7 +316,6 @@
       padding: 8px 16px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
     }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--card-border); padding: 4rem 0 3rem;
       background: #04060b; color: var(--text-muted); font-size: 0.9rem;
@@ -435,6 +362,7 @@
       <li><a href="#planos"><span>↗</span> Planos</a></li>
       <li><a href="#portfolio"><span>↗</span> Cases</a></li>
       <li><a href="#faq"><span>↗</span> Dúvidas</a></li>
+      <li><a href="landing-pages"><span>↗</span> Landing Pages (R$ 497)</a></li>
       <li><a href="seo"><span>↗</span> SEO e Google</a></li>
       <li><a href="tipos-de-sites"><span>↗</span> Tipos de Sites</a></li>
       <li><a href="por-que-ter-um-site"><span>↗</span> Indústrias Locais</a></li>
@@ -483,7 +411,6 @@
       <div class="container">
         <div class="hero-badge">Criação de Sites para Empresas em São Paulo - SP</div>
         
-        <!-- H1 PRINCIPAL OTIMIZADO -->
         <h1>Criação de Sites e Soluções Digitais para Empresas</h1>
         
         <p>Ajudamos pequenos negócios a terem uma presença digital profissional, transmitirem mais confiança e receberem mais contatos de clientes pela internet.</p>
@@ -577,7 +504,7 @@
       </div>
     </section>
 
-    <!-- ==================== SERVIÇOS (ESTRUTURAÇÃO EXATA DE H2 E H3 COM LINKS INTERNOS) ==================== -->
+    <!-- SERVIÇOS (COM H2/H3 E LINKS INTERNOS) -->
     <section id="servicos">
       <div class="container">
         <div class="section-head">
@@ -588,7 +515,7 @@
 
         <div class="services-silo-grid">
           
-          <!-- SILO 1: CRIAÇÃO DE SITES PROFISSIONAIS -->
+          <!-- SILO 1: SITES -->
           <article class="service-silo-card">
             <div>
               <h2><span>💻</span> Criação de Sites Profissionais</h2>
@@ -610,12 +537,12 @@
             </div>
           </article>
 
-          <!-- SILO 2: LANDING PAGES -->
-          <article class="service-silo-card">
+          <!-- SILO 2: LANDING PAGES (LINK DIRETO PARA O NOVO ARQUIVO) -->
+          <article class="service-silo-card" style="border-color: rgba(59, 130, 246, 0.4); background: #0c1424;">
             <div>
               <h2><span>🎯</span> Landing Pages</h2>
               <p>
-                Páginas de alta conversão projetadas com foco único em transformar cliques em pedidos de orçamento diretos no WhatsApp da sua equipe.
+                Páginas de alta conversão projetadas para transformar cliques em pedidos de orçamento diretos no WhatsApp da sua equipe (a partir de R$ 497).
               </p>
               
               <div class="sub-pillars">
@@ -626,8 +553,8 @@
             </div>
 
             <div>
-              <a href="tipos-de-sites" class="service-link-arrow">
-                Conheça nossas landing pages →
+              <a href="landing-pages" class="service-link-arrow" style="color: #93c5fd; font-weight: 800;">
+                Ver planos de Landing Pages (START, PRO e CONVERSION) →
               </a>
             </div>
           </article>
@@ -654,7 +581,7 @@
             </div>
           </article>
 
-          <!-- SILO 4: E-MAIL PROFISSIONAL -->
+          <!-- SILO 4: E-MAIL -->
           <article class="service-silo-card">
             <div>
               <h2><span>✉️</span> E-mail Profissional</h2>
@@ -832,7 +759,7 @@
               <h4>Qual tipo de site é o mais indicado para mim?</h4>
               <p>Landing pages são perfeitas para campanhas rápidas e serviços pontuais. Sites institucionais são ideais para empresas que querem passar máxima credibilidade e apresentar vários serviços.</p>
             </div>
-            <a href="tipos-de-sites" style="color: var(--accent); font-size: 0.88rem; font-weight: 700; text-decoration: underline; margin-top: 10px;">Ver todos os tipos de sites ↗</a>
+            <a href="landing-pages" style="color: var(--accent); font-size: 0.88rem; font-weight: 700; text-decoration: underline; margin-top: 10px;">Ver planos de Landing Pages (a partir de R$ 497) ↗</a>
           </div>
 
           <div class="faq-item">
@@ -906,7 +833,7 @@
           <h4>Serviços & Páginas</h4>
           <ul>
             <li><a href="#servicos">Criação de Sites</a></li>
-            <li><a href="#servicos">Landing Pages</a></li>
+            <li><a href="landing-pages">Landing Pages (R$ 497)</a></li>
             <li><a href="seo">Serviços de SEO</a></li>
             <li><a href="email-corporativo">E-mail Profissional</a></li>
             <li><a href="tipos-de-sites">Tipos de Sites</a></li>
@@ -947,7 +874,6 @@
     </a>
   </div>
 
-  <!-- SCRIPT CONTROLE MENU MOBILE -->
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const mobileDrawer = document.getElementById('mobileDrawer');
